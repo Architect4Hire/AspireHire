@@ -109,7 +109,3 @@
 * Rich developer profiles: portfolios, certifications, test scores, ratings.
 * Accessible (WCAG compliant) and dark-mode friendly.
 * Responsive web-first design with optional future native mobile app.
-
----
-
-👉 Would you like me to also **condense these into a tabular requirements matrix** (Functional vs Technical, with “Priority” or “Phase” columns), so it’s easier to track in your architecture/requirements doc and roadmap?
