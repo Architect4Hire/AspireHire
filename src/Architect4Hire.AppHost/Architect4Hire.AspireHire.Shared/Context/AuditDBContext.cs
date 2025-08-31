@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
-namespace BuddyNetworks.Networks.Shared.Context
+namespace Architect4Hire.AspireHire.Shared.Context
 {
     public abstract class AuditDBContext : DbContext
     {
