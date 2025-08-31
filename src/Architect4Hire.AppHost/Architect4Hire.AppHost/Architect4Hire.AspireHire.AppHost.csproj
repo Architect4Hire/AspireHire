@@ -18,4 +18,16 @@
     <PackageReference Include="Aspire.Hosting.SqlServer" Version="9.4.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Architect4Hire.AspireHire.ContractService\Architect4Hire.AspireHire.ContractService.csproj" />
+    <ProjectReference Include="..\Architect4Hire.AspireHire.JobService\Architect4Hire.AspireHire.JobService.csproj" />
+    <ProjectReference Include="..\Architect4Hire.AspireHire.MessageService\Architect4Hire.AspireHire.MessageService.csproj" />
+    <ProjectReference Include="..\Architect4Hire.AspireHire.PaymentService\Architect4Hire.AspireHire.PaymentService.csproj" />
+    <ProjectReference Include="..\Architect4Hire.AspireHire.ProfileService\Architect4Hire.AspireHire.ProfileService.csproj" />
+    <ProjectReference Include="..\Architect4Hire.AspireHire.ProposalService\Architect4Hire.AspireHire.ProposalService.csproj" />
+    <ProjectReference Include="..\Architect4Hire.AspireHire.TokenService\Architect4Hire.AspireHire.TokenService.csproj" />
+    <ProjectReference Include="..\Architect4Hire.AspireHire.UserService\Architect4Hire.AspireHire.UserService.csproj" />
+    <ProjectReference Include="..\Architect4Hire.AspireHire.UtilityService\Architect4Hire.AspireHire.UtilityService.csproj" />
+  </ItemGroup>
+
 </Project>

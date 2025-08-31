@@ -1,0 +1,6 @@
+@Architect4Hire.AspireHire.PaymentService_HostAddress = http://localhost:5087
+
+GET {{Architect4Hire.AspireHire.PaymentService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

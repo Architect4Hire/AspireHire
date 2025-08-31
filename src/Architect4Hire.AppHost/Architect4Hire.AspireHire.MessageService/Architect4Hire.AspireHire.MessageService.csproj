@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>ff83cd46-a4d0-4c81-bc27-f211b2c97427</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Architect4Hire.AspireHire.MessageServiceDomainLayer\Architect4Hire.AspireHire.MessageServiceDomainLayer.csproj" />
+    <ProjectReference Include="..\Architect4Hire.AspireHire.ServiceDefaults\Architect4Hire.AspireHire.ServiceDefaults.csproj" />
+  </ItemGroup>
+
+</Project>

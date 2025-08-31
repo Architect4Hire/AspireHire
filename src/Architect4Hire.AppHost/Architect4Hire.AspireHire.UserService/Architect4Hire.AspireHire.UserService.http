@@ -1,0 +1,6 @@
+@Architect4Hire.AspireHire.UserService_HostAddress = http://localhost:5023
+
+GET {{Architect4Hire.AspireHire.UserService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
