@@ -1,0 +1,143 @@
+<!-- Default -->
+<div
+    class="container pb-100"
+    [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/index-3'}"
+>
+    <div class="brand-wrapper round-10 ptb-100">
+        <h6 class="fs-16 fw-medium text-center text-white mb-50">
+            Trusted by 150+ Partners All Over The World
+        </h6>
+        <div class="brand-slider">
+            <owl-carousel-o [options]="brandSlides">
+                <ng-template carouselSlide>
+                    <div class="brand-logo">
+                        <img src="img/brand/brand-1.svg" alt="Brand Logo" class="d-block mx-auto">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="brand-logo">
+                        <img src="img/brand/brand-2.svg" alt="Brand Logo" class="d-block mx-auto">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="brand-logo">
+                        <img src="img/brand/brand-3.svg" alt="Brand Logo" class="d-block mx-auto">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="brand-logo">
+                        <img src="img/brand/brand-4.svg" alt="Brand Logo" class="d-block mx-auto">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="brand-logo">
+                        <img src="img/brand/brand-5.svg" alt="Brand Logo" class="d-block mx-auto">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="brand-logo">
+                        <img src="img/brand/brand-6.svg" alt="Brand Logo" class="d-block mx-auto">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="brand-logo">
+                        <img src="img/brand/brand-1.svg" alt="Brand Logo" class="d-block mx-auto">
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>
+
+<!-- Only for Home Demo - 2 -->
+<div
+    class="container ptb-100"
+    *ngIf="router.url === '/index-2'"
+>
+    <div class="row align-items-center">
+        <div class="col-lg-3 col-md-4 pe-xxl-5">
+            <p class="fw-bold text-dark-green mb-md-0 pe-xl-5">
+                Trusted by 150+ Partners All Over The World
+            </p>
+        </div>
+        <div class="col-lg-9 col-md-8">
+            <div class="brand-slider">
+                <owl-carousel-o [options]="brandSlides">
+                    <ng-template carouselSlide>
+                        <div class="brand-logo">
+                            <img src="img/brand/brand-1.svg" alt="Brand Logo" class="d-block mx-auto">
+                        </div>
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <div class="brand-logo">
+                            <img src="img/brand/brand-2.svg" alt="Brand Logo" class="d-block mx-auto">
+                        </div>
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <div class="brand-logo">
+                            <img src="img/brand/brand-3.svg" alt="Brand Logo" class="d-block mx-auto">
+                        </div>
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <div class="brand-logo">
+                            <img src="img/brand/brand-4.svg" alt="Brand Logo" class="d-block mx-auto">
+                        </div>
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <div class="brand-logo">
+                            <img src="img/brand/brand-5.svg" alt="Brand Logo" class="d-block mx-auto">
+                        </div>
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <div class="brand-logo">
+                            <img src="img/brand/brand-6.svg" alt="Brand Logo" class="d-block mx-auto">
+                        </div>
+                    </ng-template>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Only for Home Demo - 3 -->
+<div
+    class="brand-wrap"
+    *ngIf="router.url === '/index-3'"
+>
+    <div class="container">
+        <div class="brand-slider">
+            <owl-carousel-o [options]="brandSlides">
+                <ng-template carouselSlide>
+                    <div class="brand-logo">
+                        <img src="img/brand/brand-1.svg" alt="Brand Logo" class="d-block mx-auto">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="brand-logo">
+                        <img src="img/brand/brand-2.svg" alt="Brand Logo" class="d-block mx-auto">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="brand-logo">
+                        <img src="img/brand/brand-3.svg" alt="Brand Logo" class="d-block mx-auto">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="brand-logo">
+                        <img src="img/brand/brand-4.svg" alt="Brand Logo" class="d-block mx-auto">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="brand-logo">
+                        <img src="img/brand/brand-5.svg" alt="Brand Logo" class="d-block mx-auto">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="brand-logo">
+                        <img src="img/brand/brand-6.svg" alt="Brand Logo" class="d-block mx-auto">
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>

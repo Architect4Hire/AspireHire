@@ -1,0 +1,173 @@
+<!-- Default -->
+<div
+    class="testimonial-wrap style-one position-relative ptb-100"
+    [ngClass]="{'d-none': router.url === '/index-2'}"
+>
+    <div class="container">
+        <div class="section-title style-one text-center mb-35">
+            <h2 class="fw-medium">
+                Have A Look Our <strong>Success Stories</strong>
+            </h2>
+            <p class="mb-0">
+                Abezo have changed thousands life!
+            </p>
+        </div>
+        <div class="testimonial-slider">
+            <owl-carousel-o [options]="testimonialSlides">
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style-one bg-gray round-20">
+                        <div class="testimonial-header d-flex align-items-center justify-content-between">
+                            <img src="img/clients/trustpilot.png" alt="Image">
+                            <div class="ratings d-flex align-items-center justify-content-md-end">
+                                <span class="fs-18 fw-bold text-title">5.0</span>
+                                <ul class="rating list-unstyle">
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="client-quote fw-medium text-title">"When you want to create a business bigger than yourself, you need a lot of help. That's what Abezo does for you tremendiously.”</p>
+                        <h6 class="client-info fs-16">John Watson, <span class="fs-14 text-paraThree fw-normal">Marketing Chief at Solit IT</span></h6>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style-one bg-gray round-20">
+                        <div class="testimonial-header d-flex align-items-center justify-content-between">
+                            <img src="img/clients/trustpilot.png" alt="Image">
+                            <div class="ratings d-flex align-items-center justify-content-md-end">
+                                <span class="fs-18 fw-bold text-title">5.0</span>
+                                <ul class="rating list-unstyle">
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="client-quote fw-medium text-title">“Lorem ipsum dolor sit amet consectetur. Felis diam vestibulum massa tincidunt sit pharetra. Dolor viverra justo massa facilisis tortor aliquet. Mauris neque dis et molestie. Elit et adipiscing feugiat adipiscing odio.”</p>
+                        <h6 class="client-info fs-16">Jenny Angela,<span class="fs-14 text-paraThree fw-normal"> CEO at Medizo</span></h6>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style-one bg-gray round-20">
+                        <div class="testimonial-header d-flex align-items-center justify-content-between">
+                            <img src="img/clients/trustpilot.png" alt="Image">
+                            <div class="ratings d-flex align-items-center justify-content-md-end">
+                                <span class="fs-18 fw-bold text-title">5.0</span>
+                                <ul class="rating list-unstyle">
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="client-quote fw-medium text-title">"When you want to create a business bigger than yourself, you need a lot of help. That's what Abezo does for you tremendiously.”</p>
+                        <h6 class="client-info fs-16">John Watson, <span class="fs-14 text-paraThree fw-normal">Accounts Manager at Bistro IT</span></h6>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>
+
+<!-- Only for Home Demo - 2 -->
+<div
+    class="testimonial-wrap style-two bg_dark position-relative ptb-100"
+    *ngIf="router.url === '/index-2'"
+>
+    <div class="container">
+        <div class="section-title style-two text-center mb-35">
+            <h2 class="text-white">
+                Have A Look Our <strong>Success Stories</strong>
+            </h2>
+            <p class="text-grayTwo mb-0">
+                Abezo have changed thousands life!
+            </p>
+        </div>
+        <div class="testimonial-slider">
+            <owl-carousel-o [options]="testimonialSlides">
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style-two round-10">
+                        <div class="testimonial-header d-flex align-items-center justify-content-between">
+                            <img src="img/clients/trustpilot-white.png" alt="Image">
+                            <div class="ratings d-flex align-items-center justify-content-md-end">
+                                <span class="fs-18 fw-bold text-white">
+                                    5.0
+                                </span>
+                                <ul class="rating list-unstyle">
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="client-quote fw-medium text-white">
+                            "When you want to create a business bigger than yourself, you need a lot of help. That's what Abezo does for you tremendiously.”
+                        </p>
+                        <h6 class="client-info fs-16 text_secondary">
+                            John Watson, <span class="fs-14 text-grayColorTwo fw-normal">Marketing Chief at Solit IT</span>
+                        </h6>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style-two round-10">
+                        <div class="testimonial-header d-flex align-items-center justify-content-between">
+                            <img src="img/clients/trustpilot-white.png" alt="Image">
+                            <div class="ratings d-flex align-items-center justify-content-md-end">
+                                <span class="fs-18 fw-bold text-white">
+                                    5.0
+                                </span>
+                                <ul class="rating list-unstyle">
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="client-quote fw-medium text-white">
+                            “Lorem ipsum dolor sit amet consectetur. Felis diam vestibulum massa tincidunt sit pharetra. Dolor viverra justo massa facilisis tortor aliquet. Mauris neque dis et molestie. Elit et adipiscing feugiat adipiscing odio.”
+                        </p>
+                        <h6 class="client-info text_secondary fs-16">
+                            Jenny Angela, <span class="fs-14 text-grayColorTwo fw-normal">CEO at Medizo</span>
+                        </h6>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="testimonial-card style-two round-10">
+                        <div class="testimonial-header d-flex align-items-center justify-content-between">
+                            <img src="img/clients/trustpilot-white.png" alt="Image">
+                            <div class="ratings d-flex align-items-center justify-content-md-end">
+                                <span class="fs-18 fw-bold text-white">
+                                    5.0
+                                </span>
+                                <ul class="rating list-unstyle">
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                    <li><i class="ri-star-fill"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="client-quote fw-medium text-white">
+                            "When you want to create a business bigger than yourself, you need a lot of help. That's what Abezo does for you tremendiously.”
+                        </p>
+                        <h6 class="client-info text_secondary fs-16">
+                            John Watson, <span class="fs-14 text-grayColorTwo fw-normal">Accounts Manager at Bistro IT</span>
+                        </h6>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>

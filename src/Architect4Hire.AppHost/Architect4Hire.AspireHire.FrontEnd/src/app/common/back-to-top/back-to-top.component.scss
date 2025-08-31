@@ -1,0 +1,39 @@
+.back-to-top {
+    right: 30px;
+    z-index: 99;
+    width: 45px;
+    height: 45px;
+    bottom: 30px;
+    cursor: pointer;
+    font-size: 32px;
+    line-height: 43px;
+    color: var(--blackColor);
+    transition: var(--transition);
+    background-color: var(--whiteColor);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    &:hover {
+        color: var(--whiteColor);
+        background-color: var(--primaryColor);
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .back-to-top {
+        right: 15px;
+        bottom: 15px;
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .back-to-top {
+        right: 20px;
+        bottom: 20px;
+    }
+
+}

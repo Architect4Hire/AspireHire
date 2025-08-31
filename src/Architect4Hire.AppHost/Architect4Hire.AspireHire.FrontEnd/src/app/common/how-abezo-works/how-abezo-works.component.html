@@ -1,0 +1,205 @@
+<!-- Default -->
+<div
+    class="hw-wrap style-one position-relative index-1"
+    [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/index-3'}"
+>
+    <img src="img/section-shape-2.png" alt="Shape" class="section-shape position-absolute bounce sm-none">
+    <div class="container ptb-100">
+        <div class="section-title text-center mb-35">
+            <h2 class="fw-medium">
+                How <strong>Abezo Works</strong> for you
+            </h2>
+            <p class="mb-0">
+                Recruitment made easy in just 1 Min!
+            </p>
+        </div>
+        <div class="row justify-content-center gx-xxl-6">
+            <div class="col-xl-4 col-md-6 ps-xxl-1">
+                <div class="hw-card style-one text-center mb-30">
+                    <div class="hw-img-wrap position-relative index-1">
+                        <img src="img/how-it-works/shape-1.png" alt="Shape" class="hw-shape transition">
+                        <img src="img/how-it-works/register.png" alt="How It Works" class="hw-img position-absolute">
+                    </div>
+                    <h3 class="fs-22">
+                        Create An Account
+                    </h3>
+                    <p class="mb-0">
+                        It’s very easy to open an account and start your journey.
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="hw-card style-one text-center mb-30">
+                    <div class="hw-img-wrap position-relative index-1">
+                        <img src="img/how-it-works/shape-2.png" alt="Shape" class="hw-shape transition">
+                        <img src="img/how-it-works/profile.png" alt="How It Works" class="hw-img position-absolute">
+                    </div>
+                    <h3 class="fs-22">
+                        Complete Your Profile
+                    </h3>
+                    <p class="mb-0">
+                        Complete your profile with all the info to get attention of client.
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="hw-card style-one text-center mb-30">
+                    <div class="hw-img-wrap position-relative index-1">
+                        <img src="img/how-it-works/shape-3.png" alt="Shape" class="hw-shape transition">
+                        <img src="img/how-it-works/success.png" alt="How It Works" class="hw-img position-absolute">
+                    </div>
+                    <h3 class="fs-22">
+                        Apply For Job & Hired
+                    </h3>
+                    <p class="mb-0">
+                        Apply & get your preferable jobs with all the requirements and get it.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Only for Home Demo - 2 -->
+<div
+    class="hw-wrap style-two pb-70"
+    *ngIf="router.url === '/index-2'"
+>
+    <div class="container">
+        <div class="row align-items-center mb-35">
+            <div class="col-md-8">
+                <div class="section-title style-two">
+                    <h2 class="mb-10">
+                        How <strong>Abezo Works</strong> for you
+                    </h2>
+                    <p class="mb-0">
+                        Recruitment made easy in just 1 Min!
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 text-md-end">
+                <a routerLink="/register" class="btn style-four">Join Now</a>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xl-4 col-md-6">
+                <div class="hw-card style-two mb-30">
+                    <div class="hw-img round-10">
+                        <img src="img/how-it-works/hw-1.png" alt="How It Works" class="round-10">
+                    </div>
+                    <div class="hw-text position-relative">
+                        <span class="font-secondary text_primary position-absolute">
+                            1.
+                        </span>
+                        <h3 class="fs-22 font-secondary">
+                            Create An Account
+                        </h3>
+                        <p class="mb-0">
+                            It’s very easy to open an account and start your journey.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="hw-card style-two mb-30">
+                    <div class="hw-img round-10">
+                        <img src="img/how-it-works/hw-2.png" alt="How It Works" class="round-10">
+                    </div>
+                    <div class="hw-text position-relative">
+                        <span class="font-secondary text_primary position-absolute">
+                            2.
+                        </span>
+                        <h3 class="fs-22 font-secondary">
+                            Apply Job Online
+                        </h3>
+                        <p class="mb-0">
+                            It’s very easy to open an account and start your journey.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <div class="hw-card style-two mb-30">
+                    <div class="hw-img round-10">
+                        <img src="img/how-it-works/hw-3.png" alt="How It Works" class="round-10">
+                    </div>
+                    <div class="hw-text position-relative">
+                        <span class="font-secondary text_primary position-absolute">
+                            3.
+                        </span>
+                        <h3 class="fs-22 font-secondary">
+                            Join Your First Job
+                        </h3>
+                        <p class="mb-0">
+                            It’s very easy to open an account and start your journey.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Only for Home Demo - 3 -->
+<div
+    class="hw-wrap style-three ptb-100"
+    *ngIf="router.url === '/index-3'"
+>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-7">
+                <div class="section-title style-three mb-35">
+                    <h2 class="mb-0 ">
+                        How Abezo Works For The Candidates
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="hw-card-wrap d-flex flex-wrap align-items-start justify-content-between">
+            <div class="hw-card style-three text-center position-relative index-1 transition">
+                <div class="hw-icon d-flex flex-column align-items-center justify-content-center rounded-circle bg_primary">
+                    <img src="img/how-it-works/favorite.svg" alt="Icon">
+                </div>
+                <h3 class="fs-18">
+                    4. Get Hired
+                </h3>
+                <p class="mb-0">
+                    It’s very easy to open an account and start your journey.
+                </p>
+            </div>
+            <div class="hw-card style-three text-center position-relative index-1 transition">
+                <div class="hw-icon d-flex flex-column align-items-center justify-content-center rounded-circle bg_primary">
+                    <img src="img/how-it-works/application.svg" alt="Icon">
+                </div>
+                <h3 class="fs-18">
+                    3. Apply For Jobs
+                </h3>
+                <p class="mb-0">
+                    It’s very easy to open an account and start your journey.
+                </p>
+            </div>
+            <div class="hw-card style-three text-center position-relative index-1 transition">
+                <div class="hw-icon d-flex flex-column align-items-center justify-content-center rounded-circle bg_primary">
+                    <img src="img/how-it-works/cv.svg" alt="Icon">
+                </div>
+                <h3 class="fs-18">
+                    2. Upload Your CV
+                </h3>
+                <p class="mb-0">
+                    It’s very easy to open an account and start your journey.
+                </p>
+            </div>
+            <div class="hw-card style-three text-center position-relative index-1 transition">
+                <div class="hw-icon d-flex flex-column align-items-center justify-content-center rounded-circle bg_primary">
+                    <img src="img/how-it-works/edit.svg" alt="Icon">
+                </div>
+                <h3 class="fs-18">
+                    1. Create An Account
+                </h3>
+                <p class="mb-0">
+                    It’s very easy to open an account and start your journey.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

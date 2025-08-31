@@ -1,0 +1,128 @@
+.contact-form {
+    .form-group {
+        position: relative;
+
+        label {
+            display: block;
+            margin-bottom: 11px;
+        }
+        input, select, textarea { 
+            width: 100%;
+            color: var(--blackColor);
+            padding: 14px 20px 14px 25px;
+
+            &::placeholder {
+                color: #858F97;
+                opacity: 1;
+            }
+        }
+        input, select {
+            height: 70px;
+        }
+        &.style-two {
+            input {
+                color: var(--titleColor);
+
+                &::placeholder {
+                    color: var(--titleColor);
+                }
+            }
+            .pwd_open {
+                top: 65px;
+                right: 20px;
+                cursor: pointer;
+                color: var(--titleColor);
+            }
+        }
+        select {
+            background: {
+                size: 12px;
+                repeat: no-repeat;
+                position: calc(100% - 18px) 50%;
+                image: url(../../../../../public/img/icons/down-arrow.svg);
+            };
+        }
+        textarea {
+            resize: none;
+            height: 160px;
+            padding-top: 20px;
+        }
+    }
+}
+.contact-img-wrap {
+    border-radius: 30px;
+
+    .contact-img {
+        border-radius: 30px;
+    }
+    .contact-shape {
+        top: -95px;
+        left: 50%;
+    }
+}
+
+/* Max width 575px */
+@media only screen and (max-width: 575px) {}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .contact-form {
+        .form-group {
+            input, select {
+                height: 56px;
+                padding: 12px 16px;
+            }
+            textarea {
+                padding: {
+                    top: 16px;
+                    left: 16px;
+                };
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+/* Max width 991px */
+@media only screen and (max-width: 991px) {}
+
+/* Min width 992px */
+@media only screen and (min-width: 992px) {}
+
+/* Max width 1199px */
+@media only screen and (max-width: 1199px) {}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/* Min width 1200px */
+@media only screen and (min-width: 1200px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1400px */
+@media only screen and (min-width: 1400px) {
+
+    .contact-img-wrap {
+        width: calc(100% - 78px);
+        margin-left: auto;
+    }
+
+}
+
+/* Min width 1400px to Max width 1599px */
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}
+
+/* Min width 1920px */
+@media only screen and (min-width: 1920px) {}

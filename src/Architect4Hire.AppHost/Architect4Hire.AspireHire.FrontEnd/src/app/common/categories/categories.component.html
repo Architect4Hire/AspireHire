@@ -1,0 +1,516 @@
+<!-- Default -->
+<div
+    class="container pt-100 pb-70"
+    [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/index-3'}"
+>
+    <div class="row align-items-center mb-40">
+        <div class="col-md-8">
+            <div class="section-title style-one">
+                <h2 class="mb-10 fw-medium">
+                    Popular <strong>Job Categories</strong>
+                </h2>
+                <p class="text-ash mb-0">
+                    Recruitment made easy in just 1 Min!
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 text-md-end">
+            <a routerLink="/jobs-left-sidebar" class="link style-two fs-14 fw-semibold">
+                View All Categories <i class="ri-arrow-right-line"></i>
+            </a>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
+            <div class="category-card style-one text-center position-relative index-1 round-20 transition mb-30">
+                <div class="cat-icon d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                    <img src="img/category/design.svg" alt="Design Icon" class="transition">
+                </div>
+                <h3 class="transition fw-semibold">
+                    Design
+                </h3>
+                <span class="fs-14 transition">
+                    241+ Jobs
+                </span>
+                <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+            </div>
+        </div>
+        <div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
+            <div class="category-card style-one text-center position-relative index-1 round-20 transition mb-30">
+                <div class="cat-icon d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                    <img src="img/category/code.svg" alt="Design Icon" class="transition">
+                </div>
+                <h3 class="transition fw-semibold">
+                    Development
+                </h3>
+                <span class="fs-14 transition">
+                    1K+ Jobs
+                </span>
+                <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+            </div>
+        </div>
+        <div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
+            <div class="category-card style-one text-center position-relative index-1 round-20 transition mb-30">
+                <div class="cat-icon d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                    <img src="img/category/marketing.svg" alt="Design Icon" class="transition">
+                </div>
+                <h3 class="transition fw-semibold">
+                    Marketing
+                </h3>
+                <span class="fs-14 transition">
+                    124+ Jobs
+                </span>
+                <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+            </div>
+        </div>
+        <div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
+            <div class="category-card style-one text-center position-relative index-1 round-20 transition mb-30">
+                <div class="cat-icon d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                    <img src="img/category/editing.svg" alt="Design Icon" class="transition">
+                </div>
+                <h3 class="transition fw-semibold">
+                    Editing
+                </h3>
+                <span class="fs-14 transition">
+                    24+ Jobs
+                </span>
+                <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+            </div>
+        </div>
+        <div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
+            <div class="category-card style-one text-center position-relative index-1 round-20 transition mb-30">
+                <div class="cat-icon d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                    <img src="img/category/businessplan.svg" alt="Design Icon" class="transition">
+                </div>
+                <h3 class="transition fw-semibold">
+                    Business
+                </h3>
+                <span class="fs-14 transition">
+                    1.2K+ Jobs
+                </span>
+                <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+            </div>
+        </div>
+        <div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
+            <div class="category-card style-one text-center position-relative index-1 round-20 transition mb-30">
+                <div class="cat-icon d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                    <img src="img/category/it-business.svg" alt="Design Icon" class="transition">
+                </div>
+                <h3 class="transition fw-semibold">
+                    IT
+                </h3>
+                <span class="fs-14 transition">
+                    1.3K+ Jobs
+                </span>
+                <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Only for Home Demo - 2 -->
+<div
+    class="container ptb-100"
+    *ngIf="router.url === '/index-2'"
+>
+    <div class="row align-items-center mb-40">
+        <div class="col-md-8">
+            <div class="section-title style-two">
+                <h2 class="mb-10">
+                    Explore Our <strong>Job Categories</strong>
+                </h2>
+                <p class="text-ash mb-0">
+                    Recruitment made easy in just 1 Min!
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 text-md-end">
+            <a routerLink="/jobs-left-sidebar" class="link style-two fs-14 fw-semibold">
+                View All Categories <i class="ri-arrow-right-line"></i>
+            </a>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="category-card style-two d-flex flex-wrap align-items-start position-relative index-1 round-10 mb-25 transition">
+                <div class="cat-icon">
+                    <img src="img/category/highlighter.svg" alt="Design Category">
+                </div>
+                <div class="cat-info">
+                    <h3>
+                        Design
+                    </h3>
+                    <span class="fs-14">
+                        241+ Jobs
+                    </span>
+                </div>
+                <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="category-card style-two d-flex flex-wrap align-items-start position-relative index-1 round-10 mb-25 transition">
+                <div class="cat-icon">
+                    <img src="img/category/web-development.svg" alt="Design Category">
+                </div>
+                <div class="cat-info">
+                    <h3>
+                        Development
+                    </h3>
+                    <span class="fs-14">
+                        531+ Jobs
+                    </span>
+                </div>
+                <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="category-card style-two d-flex flex-wrap align-items-start position-relative index-1 round-10 mb-25 transition">
+                <div class="cat-icon">
+                    <img src="img/category/pie-graph.svg" alt="Design Category">
+                </div>
+                <div class="cat-info">
+                    <h3>
+                        Marketing
+                    </h3>
+                    <span class="fs-14">
+                        121+ Jobs
+                    </span>
+                </div>
+                <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="category-card style-two d-flex flex-wrap align-items-start position-relative index-1 round-10 mb-25 transition">
+                <div class="cat-icon">
+                    <img src="img/category/money-growth.svg" alt="Design Category">
+                </div>
+                <div class="cat-info">
+                    <h3>
+                        Accounting
+                    </h3>
+                    <span class="fs-14">
+                        75+ Jobs
+                    </span>
+                </div>
+                <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="category-card style-two d-flex flex-wrap align-items-start position-relative index-1 round-10 mb-25 transition">
+                <div class="cat-icon">
+                    <img src="img/category/atm-card.svg" alt="Design Category">
+                </div>
+                <div class="cat-info">
+                    <h3>
+                        Banking
+                    </h3>
+                    <span class="fs-14">
+                        324+ Jobs
+                    </span>
+                </div>
+                <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="category-card style-two d-flex flex-wrap align-items-start position-relative index-1 round-10 mb-25 transition">
+                <div class="cat-icon">
+                    <img src="img/category/jigsaw.svg" alt="Design Category">
+                </div>
+                <div class="cat-info">
+                    <h3>
+                        Editing
+                    </h3>
+                    <span class="fs-14">
+                        64+ Jobs
+                    </span>
+                </div>
+                <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="category-card style-two d-flex flex-wrap align-items-start position-relative index-1 round-10 mb-25  transition">
+                <div class="cat-icon">
+                    <img src="img/category/growth-chart.svg" alt="Design Category">
+                </div>
+                <div class="cat-info">
+                    <h3>
+                        SEO Marketing
+                    </h3>
+                    <span class="fs-14">
+                        1034+ Jobs
+                    </span>
+                </div>
+                <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="category-card style-two d-flex flex-wrap align-items-start position-relative index-1 round-10 mb-25 transition">
+                <div class="cat-icon">
+                    <img src="img/category/idea.svg" alt="Design Category">
+                </div>
+                <div class="cat-info">
+                    <h3>
+                        Creative
+                    </h3>
+                    <span class="fs-14">
+                        63+ Jobs
+                    </span>
+                </div>
+                <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Only for Home Demo - 3 -->
+<div
+    *ngIf="router.url === '/index-3'"
+>
+    <div class="container">
+        <div class="section-title style-three text-center mb-35">
+            <h2 class="mb-10">
+                Popular Job Categories
+            </h2>
+            <p class="text-ash mb-0">
+                Recruitment made easy in just 1 Min!
+            </p>
+        </div>
+    </div>
+    <div class="category-slider-one">
+        <owl-carousel-o [options]="categorySlides">
+            <ng-template carouselSlide>
+                <div class="category-card style-three d-flex flex-wrap align-items-center position-relative index-1 round-20 transition mb-30">
+                    <div class="cat-icon bg-white d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                        <img src="img/category/design.svg" alt="Design Icon">
+                    </div>
+                    <h3 class="fs-18 mb-0">
+                        Design
+                    </h3>
+                    <span class="fs-14 position-relative">
+                        241+ Jobs
+                    </span>
+                    <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="category-card style-three d-flex flex-wrap align-items-center position-relative index-1 round-20 transition mb-30">
+                    <div class="cat-icon bg-white d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                        <img src="img/category/code.svg" alt="Design Icon">
+                    </div>
+                    <h3 class="fs-18 mb-0">
+                        Development
+                    </h3>
+                    <span class="fs-14 position-relative">
+                        1k+ Jobs
+                    </span>
+                    <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="category-card style-three d-flex flex-wrap align-items-center position-relative index-1 round-20 transition mb-30">
+                    <div class="cat-icon bg-white d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                        <img src="img/category/marketing.svg" alt="Design Icon">
+                    </div>
+                    <h3 class="fs-18 mb-0">
+                        Marketing
+                    </h3>
+                    <span class="fs-14 position-relative">
+                        124+ Jobs
+                    </span>
+                    <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="category-card style-three d-flex flex-wrap align-items-center position-relative index-1 round-20 transition mb-30">
+                    <div class="cat-icon bg-white d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                        <img src="img/category/editing.svg" alt="Design Icon">
+                    </div>
+                    <h3 class="fs-18 mb-0">
+                        Editing
+                    </h3>
+                    <span class="fs-14 position-relative">
+                        241+ Jobs
+                    </span>
+                    <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="category-card style-three d-flex flex-wrap align-items-center position-relative index-1 round-20 transition mb-30">
+                    <div class="cat-icon bg-white d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                        <img src="img/category/businessplan.svg" alt="Design Icon">
+                    </div>
+                    <h3 class="fs-18 mb-0">
+                        Business
+                    </h3>
+                    <span class="fs-14 position-relative">
+                        1.2k+ Jobs
+                    </span>
+                    <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="category-card style-three d-flex flex-wrap align-items-center position-relative index-1 round-20 transition mb-30">
+                    <div class="cat-icon bg-white d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                        <img src="img/category/it-business.svg" alt="Design Icon">
+                    </div>
+                    <h3 class="fs-18 mb-0">
+                        IT
+                    </h3>
+                    <span class="fs-14 position-relative">
+                        1.3K Jobs
+                    </span>
+                    <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="category-card style-three d-flex flex-wrap align-items-center position-relative index-1 round-20 transition mb-30">
+                    <div class="cat-icon bg-white d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                        <img src="img/category/web-development.svg" alt="Design Icon">
+                    </div>
+                    <h3 class="fs-18 mb-0">
+                        Development
+                    </h3>
+                    <span class="fs-14 position-relative">
+                        1k+ Jobs
+                    </span>
+                    <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="category-card style-three d-flex flex-wrap align-items-center position-relative index-1 round-20 transition mb-30">
+                    <div class="cat-icon bg-white d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                        <img src="img/category/design.svg" alt="Design Icon">
+                    </div>
+                    <h3 class="fs-18 mb-0">
+                        Design
+                    </h3>
+                    <span class="fs-14 position-relative">
+                        241+ Jobs
+                    </span>
+                    <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+    <div class="category-slider-two">
+        <owl-carousel-o [options]="categorySlides2">
+            <ng-template carouselSlide>
+                <div class="category-card style-three d-flex flex-wrap align-items-center position-relative index-1 round-20 transition mb-30">
+                    <div class="cat-icon bg-white d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                        <img src="img/category/editing.svg" alt="Design Icon">
+                    </div>
+                    <h3 class="fs-18 mb-0">
+                        Editing
+                    </h3>
+                    <span class="fs-14 position-relative">
+                        241+ Jobs
+                    </span>
+                    <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="category-card style-three d-flex flex-wrap align-items-center position-relative index-1 round-20 transition mb-30">
+                    <div class="cat-icon bg-white d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                        <img src="img/category/businessplan.svg" alt="Design Icon">
+                    </div>
+                    <h3 class="fs-18 mb-0">
+                        Business
+                    </h3>
+                    <span class="fs-14 position-relative">
+                        1.2k+ Jobs
+                    </span>
+                    <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="category-card style-three d-flex flex-wrap align-items-center position-relative index-1 round-20 transition mb-30">
+                    <div class="cat-icon bg-white d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                        <img src="img/category/web-development.svg" alt="Design Icon">
+                    </div>
+                    <h3 class="fs-18 mb-0">
+                        Development
+                    </h3>
+                    <span class="fs-14 position-relative">
+                        1k+ Jobs
+                    </span>
+                    <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="category-card style-three d-flex flex-wrap align-items-center position-relative index-1 round-20 transition mb-30">
+                    <div class="cat-icon bg-white d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                        <img src="img/category/design.svg" alt="Design Icon">
+                    </div>
+                    <h3 class="fs-18 mb-0">
+                        Design
+                    </h3>
+                    <span class="fs-14 position-relative">
+                        241+ Jobs
+                    </span>
+                    <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="category-card style-three d-flex flex-wrap align-items-center position-relative index-1 round-20 transition mb-30">
+                    <div class="cat-icon bg-white d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                        <img src="img/category/it-business.svg" alt="Design Icon">
+                    </div>
+                    <h3 class="fs-18 mb-0">
+                        IT
+                    </h3>
+                    <span class="fs-14 position-relative">
+                        1.3K Jobs
+                    </span>
+                    <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="category-card style-three d-flex flex-wrap align-items-center position-relative index-1 round-20 transition mb-30">
+                    <div class="cat-icon bg-white d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                        <img src="img/category/design.svg" alt="Design Icon">
+                    </div>
+                    <h3 class="fs-18 mb-0">
+                        Design
+                    </h3>
+                    <span class="fs-14 position-relative">
+                        241+ Jobs
+                    </span>
+                    <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="category-card style-three d-flex flex-wrap align-items-center position-relative index-1 round-20 transition mb-30">
+                    <div class="cat-icon bg-white d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                        <img src="img/category/code.svg" alt="Design Icon">
+                    </div>
+                    <h3 class="fs-18 mb-0">
+                        Development
+                    </h3>
+                    <span class="fs-14 position-relative">
+                        1k+ Jobs
+                    </span>
+                    <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="category-card style-three d-flex flex-wrap align-items-center position-relative index-1 round-20 transition mb-30">
+                    <div class="cat-icon bg-white d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                        <img src="img/category/marketing.svg" alt="Design Icon">
+                    </div>
+                    <h3 class="fs-18 mb-0">
+                        Marketing
+                    </h3>
+                    <span class="fs-14 position-relative">
+                        124+ Jobs
+                    </span>
+                    <a routerLink="/jobs-left-sidebar" class="d-block position-absolute top-0 start-0 w-100 h-100"></a>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+    <div class="text-center px-4 pb-100">
+        <a routerLink="/jobs-left-sidebar" class="link style-two fw-semibold mx-auto">
+            View All Categories <img src="img/icons/right-arrow-green.svg" alt="Right Arrow">
+        </a>
+    </div>
+</div>

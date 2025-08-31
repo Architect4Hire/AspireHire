@@ -1,0 +1,564 @@
+<app-top-header />
+
+<app-navbar />
+
+<app-page-banner />
+
+<!-- Blog Details -->
+<div class="container ptb-100">
+    <div class="row">
+        <div class="col-xl-4 order-xl-1 order-2">
+            <div class="sidebar style-one sidebar-left bg-aqua round-10">
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-widget-title fs-18 fw-semibold">
+                        Search
+                    </h3>
+                    <form class="searchbox-widget position-relative">
+                        <img src="img/icons/search-green.svg" alt="Search Icon" class="search-icon">
+                        <input type="search" class="bg-white w-100 round-4 text-paraThree border-0" placeholder="Company titles/keywords">
+                    </form>
+                </div>
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-widget-title fs-18 fw-semibold">
+                        Categories
+                    </h3>
+                    <select name="category-select" id="category-select" class="bg-white round-4 border-0 text-title mb-10">
+                        <option value="0">
+                            Data Science
+                        </option>
+                        <option value="1">
+                            Digital Marketing
+                        </option>
+                        <option value="2">
+                            Video Editing
+                        </option>
+                        <option value="3">
+                            Web Development
+                        </option>
+                        <option value="4">
+                            Content Marketing
+                        </option>
+                    </select>
+                    <ul class="tag-list style-two list-unstyle mt-0">
+                        <li>
+                            <a routerLink="/blog-grid">
+                                Graphic Design <img src="img/icons/close-red.svg" alt="Icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/blog-grid">
+                                Video Editiong <img src="img/icons/close-red.svg" alt="Icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/blog-grid">
+                                Web Development <img src="img/icons/close-red.svg" alt="Icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-widget-title fs-18 fw-semibold">
+                        Recent Articles
+                    </h3>
+                    <div class="popular-post-widget">
+                        <div class="pp-post-item d-flex flex-wrap align-items-center">
+                            <a routerLink="/blog-details-right-sidebar" class="pp-post-img round-10">
+                                <img src="img/blog/post-thumb-1.jpg" alt="Image" class="round-10">
+                            </a>
+                            <div class="pp-post-info">
+                                <ul class="blog-metainfo list-unstyle">
+                                    <li class="position-relative">
+                                        <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                        <a routerLink="/blog-grid">
+                                            15 Jul, 2025
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h6 class="fs-16 font-medium mb-0">
+                                    <a routerLink="/blog-details-no-sidebar">
+                                        Networking 101: Building Connections to Boost Career
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="pp-post-item d-flex flex-wrap align-items-center">
+                            <a routerLink="/blog-details-right-sidebar" class="pp-post-img round-10">
+                                <img src="img/blog/post-thumb-2.jpg" alt="Image" class="round-10">
+                            </a>
+                            <div class="pp-post-info">
+                                <ul class="blog-metainfo list-unstyle">
+                                    <li class="position-relative">
+                                        <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                        <a routerLink="/blog-grid">
+                                            18 Jul, 2025
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h6 class="fs-16 font-medium mb-0">
+                                    <a routerLink="/blog-details-no-sidebar">
+                                        Top 10 Tips for Crafting a Winning Resume
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="pp-post-item d-flex flex-wrap align-items-center">
+                            <a routerLink="/blog-details-right-sidebar" class="pp-post-img round-10">
+                                <img src="img/blog/post-thumb-3.jpg" alt="Image" class="round-10">
+                            </a>
+                            <div class="pp-post-info">
+                                <ul class="blog-metainfo list-unstyle">
+                                    <li class="position-relative">
+                                        <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                        <a routerLink="/blog-grid">
+                                            20 Jul, 2025
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h6 class="fs-16 font-medium mb-0">
+                                    <a routerLink="/blog-details-no-sidebar">
+                                        How to Ace Your Next Job Interview: Expert Advice
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-widget-title fs-18 fw-semibold">
+                        Tags
+                    </h3>
+                    <ul class="tag-list list-unstyle">
+                        <li>
+                            <a routerLink="/blog-grid">
+                                Graphic Design
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/blog-grid">
+                                Video Editiong
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/blog-grid">
+                                Jobs
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/blog-grid">
+                                Designer
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/blog-grid">
+                                Finance
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/blog-grid">
+                                Career
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/blog-grid">
+                                Frontend
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/blog-grid">
+                                Software
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/blog-grid">
+                                SEO
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-8 order-xl-2 order-1">
+            <div class="content-right ms-auto">
+                <div class="blog-desc mb-50">
+                    <ul class="blog-taglist list-unstyle">
+                        <li>
+                            <a routerLink="/blog-left-sidebar" class="fs-14 round-4">
+                                Career
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/blog-left-sidebar" class="fs-14 round-4">
+                                Skills
+                            </a>
+                        </li>
+                    </ul>
+                    <h1>
+                        Exploring the Future of Remote Work: Trends, Challenges, and Opportunities
+                    </h1>
+                    <ul class="blog-metainfo list-unstyle">
+                        <li class="blog-author fs-14 d-inline-flex align-items-center">
+                            <span class="author-img rounded-circle me-2">
+                                <img src="img/blog/author-1.jpg" alt="Image" class="rounded-circle">
+                            </span>
+                            Written by <a routerLink="/blog-grid" class="ms-1 link style-one fw-semibold text-decoration-underline">
+                                Anna Frank
+                            </a>
+                        </li>
+                        <li class="position-relative fs-14">
+                            <img src="img/icons/calendar.svg" alt="Calendar Icon" class="position-absolute">
+                            <a routerLink="/blog-grid">
+                                15 Jul, 2025
+                            </a>
+                        </li>
+                        <li class="position-relative fs-14">
+                            <img src="img/icons/clock.svg" alt="Clock Icon" class="position-absolute">
+                            5 mins read
+                        </li>
+                    </ul>
+                    <div class="single-img round-6 mt-30">
+                        <img src="img/blog/single-blog-1.jpg" alt="Blog Image" class="round-6">
+                    </div>
+                    <div class="single-para">
+                        <p>
+                            The landscape of work has undergone a significant transformation over the past few years, and remote  work has emerged as a key component of  this evolution. As companies and employees alike adapt to new ways of working, it is essential to explore the trends, challenges, and opportunities that define the future of remote work.
+                        </p>
+                        <p>
+                            As a leader in Reliability-as-a-Service (RaaS), Supabase is dedicated to optimizing uptime for EV charging infrastructure by implementing cutting-edge monitoring solutions and proactive problem-solving.
+                        </p>
+                    </div>
+                    <div class="single-para">
+                        <h5>
+                            Trends Shaping Remote Work
+                        </h5>
+                        <ul class="content-feature-list style-one list-unstyle">
+                            <li class="position-relative">
+                                <img src="img/icons/check.svg" alt="Icon">
+                                <h6>
+                                    Increased Adoption of Hybrid Models
+                                </h6>
+                                <p>
+                                    Many organizations are moving towards hybrid work models, where employees split their time between working remotely and in the office. This flexibility allows for a better work-life balance and accommodates different work styles.
+                                </p>
+                            </li>
+                            <li class="position-relative">
+                                <img src="img/icons/check.svg" alt="Icon">
+                                <h6>
+                                    Advancements in Technology
+                                </h6>
+                                <p>
+                                    The development of collaboration tools like Zoom, Slack, and Microsoft Teams has made remote work more feasible and efficient. Virtual reality (VR) and augmented reality (AR) are also being explored to create immersive remote work environments.
+                                </p>
+                            </li>
+                            <li class="position-relative">
+                                <img src="img/icons/check.svg" alt="Icon">
+                                <h6>
+                                    Focus on Employee Well-being
+                                </h6>
+                                <p>
+                                    Companies are prioritizing mental health and wellness initiatives to support remote employees. Flexible schedules, wellness programs, and virtual team-building activities are becoming common practices.
+                                </p>
+                            </li>
+                            <li class="position-relative">
+                                <img src="img/icons/check.svg" alt="Icon">
+                                <h6>
+                                    Global Talent Pool
+                                </h6>
+                                <p>
+                                    Remote work enables companies to hire talent from anywhere in the world, breaking geographical barriers and fostering diverse workforces. This trend is particularly beneficial for startups and tech companies looking for specialized skills.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wp-blockquote d-flex flex-wrap align-items-start round-4">
+                        <img src="img/icons/quote.svg" alt="Icon">
+                        <p class="fs-20 fw-semibold text-title">
+                            Remote work isn’t just a change in where we work; it’s a change in how we work. The future belongs to those who adapt and innovate.
+                        </p>
+                        <h6 class="mb-0">
+                            John Krug
+                        </h6>
+                    </div>
+                    <div class="single-para">
+                        <h5>
+                            Opportunities In Remote Work
+                        </h5>
+                        <ul class="content-feature-list style-two list-unstyle">
+                            <li class="position-relative">
+                                <h6>
+                                    Cost Saving
+                                </h6>
+                                <p>
+                                    Both employers and employees can save money with remote work. Companies can reduce overhead costs associated with office space, while employees can save on commuting expenses and other work-related costs.
+                                </p>
+                            </li>
+                            <li class="position-relative">
+                                <h6>
+                                    Increased Productivity
+                                </h6>
+                                <p>
+                                    Many employees report higher productivity levels when working remotely, due to fewer distractions and the ability to create a personalized work environment. Flexible schedules also allow employees to work during their most productive hours.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row justify-content-center mb-10">
+                        <div class="col-md-4">
+                            <div class="single-img round-4">
+                                <img src="img/blog/single-blog-2.jpg" alt="Blog Image" class="round-4">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="single-img round-4">
+                                <img src="img/blog/single-blog-3.jpg" alt="Blog Image" class="round-4">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="single-img round-4">
+                                <img src="img/blog/single-blog-4.jpg" alt="Blog Image" class="round-4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-para">
+                        <ul class="content-feature-list style-two list-unstyle">
+                            <li class="position-relative">
+                                <h6>
+                                    Environmental Impact
+                                </h6>
+                                <p>
+                                    Remote work contributes to a reduction in carbon emissions, as fewer employees commute to work. This shift can have a positive impact on the  environment and help companies meet sustainability goals.
+                                </p>
+                            </li>
+                            <li class="position-relative">
+                                <h6>
+                                    Access to a Broader Talent Pool
+                                </h6>
+                                <p>
+                                    By embracing remote work, companies can attract and retain top talent from around the world, enhancing innovation and diversity within their teams.
+                                </p>
+                            </li>
+                            <li class="position-relative">
+                                <h6>
+                                    Enhanced Job Satisfaction
+                                </h6>
+                                <p>
+                                    Employees who have the flexibility to work remotely often report higher job satisfaction. This can lead to increased employee retention and a more motivated workforce.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="single-para">
+                        <p>
+                            The future of remote work is bright, with numerous trends and opportunities that promise to reshape how we work. However, it also comes with its set of challenges that companies and employees must navigate.
+                        </p>
+                        <p>
+                            By embracing technological advancements, fostering clear communication, and prioritizing employee well-being, organizations can create a thriving remote work environment. As we move forward, the key  to success will be adaptability and a willingness to innovate in the face of change.
+                        </p>
+                    </div>
+                </div>
+                <div class="post-metaoption style-one d-flex flex-wrap align-items-center justify-content-between mb-50">
+                    <h6 class="fw-semibold">
+                        Share the post:
+                    </h6>
+                    <div class="post-share d-flex align-items-center justify-content-md-end">
+                        <ul class="social-profile style-one list-unstyle">
+                            <li>
+                                <a href="https://www.facebook.com" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                                    <i class="ri-facebook-fill"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                                    <i class="ri-instagram-fill"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.twitter.com" target="_blank" class="d-flex flex-column align-items-center justify-content-center rounded-circle transition">
+                                    <i class="ri-twitter-x-fill"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="post-pagination d-flex flex-wrap justify-content-between">
+                    <div class="prev-post position-relative">
+                        <span class="fs-14 fw-semibold text_green">
+                            <img src="img/icons/left-arow-green.svg" alt="Arrow">
+                            Previous Articles
+                        </span>
+                        <div class="pp-post-item d-flex flex-wrap align-items-center">
+                            <a routerLink="." class="pp-post-img round-10">
+                                <img src="img/blog/post-thumb-1.jpg" alt="Image" class="round-10">
+                            </a>
+                            <div class="pp-post-info">
+                                <ul class="blog-metainfo list-unstyle">
+                                    <li class="position-relative fs-14">
+                                        <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                        <a routerLink="/blog-grid">
+                                            15 Jul, 2025
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h6 class="fs-16 font-medium mb-0">
+                                    <a routerLink=".">
+                                        Networking 101: Building Connections to Boost Career
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                        <a routerLink="." class="position-absolute top-0 start-0 w-100 h-100"></a>
+                    </div>
+                    <div class="next-post position-relative">
+                        <span class="fs-14 fw-semibold text_green text-end">
+                            Next Articles <img src="img/icons/right-arrow-green.svg" alt="Arrow">
+                        </span>
+                        <div class="pp-post-item d-flex flex-wrap align-items-center">
+                            <div class="pp-post-info text-end">
+                                <ul class="blog-metainfo list-unstyle">
+                                    <li class="position-relative fs-14">
+                                        <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                        <a routerLink="/blog-grid">
+                                            18 Jul, 2025
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h6 class="fs-16 font-medium mb-0">
+                                    <a routerLink=".">
+                                        Top 10 Tips for Crafting a Winning Resume
+                                    </a>
+                                </h6>
+                            </div>
+                            <a routerLink="." class="pp-post-img round-10">
+                                <img src="img/blog/post-thumb-2.jpg" alt="Image" class="round-10">
+                            </a>
+                        </div>
+                        <a routerLink="." class="position-absolute top-0 start-0 w-100 h-100"></a>
+                    </div>
+                </div>
+                <h3 class="fs-24 pt-100 mb-30">
+                    02 Comments
+                </h3>
+                <div class="comment-item-wrap pb-100">
+                    <div class="comment-item d-flex flex-wrap round-5">
+                        <div class="comment-author w-100 d-flex flex-wrap">
+                            <div class="comment-author-img rounded-circle">
+                                <img src="img/blog/author-2.jpg" alt="Image" class="rounded-circle">
+                            </div>
+                            <div class="comment-author-info">
+                                <h5 class="fs-16 fw-semibold">
+                                    Zinia Farnandiz <span class="fs-14 text-paraThree fw-normal ms-2">May 18, 2025 - 08:34</span></h5>
+                                <p class="comment-text">
+                                    As a UI/UX designer reporting directly to the CTO, your insights will have a direct impact on our product's direction. This role  requires an insightful UI/UX Designer with a passion for creating seamless and engaging digital experiences.
+                                </p>
+                                <a href="#cmt-form" class="link style-one reply-btn fs-14">
+                                    Reply <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-item d-flex flex-wrap">
+                        <div class="comment-author w-100 d-flex flex-wrap">
+                            <div class="comment-author-img rounded-circle">
+                                <img src="img/blog/author-3.jpg" alt="Image" class="rounded-circle">
+                            </div>
+                            <div class="comment-author-info">
+                                <h5 class="fs-16 fw-semibold">
+                                    Walter White <span class="fs-14 text-paraThree fw-normal ms-2">May 18, 2025 - 08:45</span>
+                                </h5>
+                                <p class="comment-text">
+                                    Employees who have the flexibility to work remotely often report higher job satisfaction. This can lead to increased employee retention and a more motivated workforce.
+                                </p>
+                                <a href="#cmt-form" class="link style-one reply-btn fs-14">
+                                    Reply <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-item d-flex flex-wrap round-5 reply">
+                        <div class="comment-author w-100 d-flex flex-wrap">
+                            <div class="comment-author-img rounded-circle">
+                                <img src="img/blog/author-1.jpg" alt="Image" class="rounded-circle">
+                            </div>
+                            <div class="comment-author-info">
+                                <h5 class="fs-16 fw-semibold">
+                                    Loren Watson <span class="fs-14 text-paraThree fw-normal ms-2">May 18, 2025 - 10:34</span>
+                                </h5>
+                                <p class="comment-text">
+                                    Cover broad of topic in web development industry. Explained a lot of basic programming knowledge with easy to understand explanation.
+                                </p>
+                                <a href="#cmt-form" class="link style-one reply-btn fs-14">
+                                    Reply <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="fs-24 mb-30">
+                    Post A Comment
+                </h3>
+                <form class="comment-form" id="cmt-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group mb-20">
+                                <label class="text-dark" for="name">
+                                    Name
+                                </label>
+                                <input type="text" name="name" id="name" placeholder="Your Name" required class="bg-gray border-0 w-100 round-4">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group mb-20">
+                                <label class="text-dark" for="email">
+                                    Email
+                                </label>
+                                <input type="email" name="email" id="email" placeholder="Your Email" required class="bg-gray border-0 w-100 round-4">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group mb-20">
+                                <label class="text-dark" for="phone_no">
+                                    Phone Number
+                                </label>
+                                <input type="number" name="phone_no" placeholder="Your Phone No" required class="bg-gray border-0 w-100 round-4">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group mb-20">
+                                <label class="text-dark" for="company">
+                                    Company
+                                </label>
+                                <input type="text" name="company" id="company" placeholder="Your Company" required class="bg-gray border-0 w-100 round-4">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group mb-20">
+                                <label class="text-dark" for="msg">
+                                    Your Message
+                                </label>
+                                <textarea name="messages" id="messages" cols="30" rows="10" placeholder="Your message here"  class="bg-gray border-0 w-100 round-4"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-25">
+                            <div class="form-check checkbox">
+                                <input class="form-check-input" type="checkbox" id="test_2">
+                                <label class="form-check-label" for="test_2">
+                                    Save my name, email, and website in this browser for the next time I comment.
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <button class="btn style-four w-100 d-block">
+                                Post A Comment
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Blog Details -->
+
+<app-footer />
+
+<app-back-to-top />

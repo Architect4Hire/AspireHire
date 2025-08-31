@@ -1,0 +1,205 @@
+.accordion-item {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(28, 46, 61, 0.1);
+    padding: {
+        top: 18px;
+        bottom: 19px;
+    };
+    &:first-child {
+        border-top: none;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+    .accordion-header {
+        position: relative;
+        border-radius: 0;
+        margin-bottom: 0;
+        z-index: 3;
+
+        .accordion-button {
+            margin: 0;
+            box-shadow: none;
+            line-height: 30px;
+            text-align: start;
+            align-items: center;
+            padding: 0 42px 0 0;
+            color: var(--titleColor);
+            transition:var(--transition);
+            font: {
+                size: 20px;
+                weight: 500;
+                family: var(--primaryFont);
+            };
+            &:after {
+                display: none;
+            }
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+            span {
+                top: 2px;
+                right: 0;
+                width: 24px;
+                height: 24px;
+                text-align: center;
+                position: absolute;
+                display: inline-block;
+
+                i {
+                    top: 50%;
+                    right: 0%;
+                    display: block;
+                    margin: 0 auto;
+                    font-size: 31px;
+                    position: absolute;
+                    color: var(--titleColor);
+                    transform: translateY(-50%);
+
+                    &.minus {
+                        visibility: hidden;
+                        opacity: 0;
+                    }
+                }
+            }
+            &.open {
+                span {
+                    i {
+                        &.minus {
+                            opacity: 1;
+                            visibility: visible;
+                        }
+                        &.plus {
+                            opacity: 0;
+                            visibility: hidden;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .accordion-body {
+        border: none;
+        margin: 0 35px 0 0;
+        padding: 10px 0 0px;
+
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.faq-box {
+    padding: {
+        right: 30px;
+        left: 30px;
+        top: 55px;
+    };
+    &:after {
+        top: 0;
+        left: 0;
+        z-index: -1;
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        position: absolute;
+        height: calc(100% - 22px);
+        background-color: #F1F4EB;
+    }
+    .accordion-item {
+        border-bottom: 1px solid rgba(28, 46, 61, 0.1);
+        padding: {
+            top: 34.5px;
+            bottom: 33px;
+        };
+        &:first-child {
+            padding-top: 0;
+        }
+        &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .accordion-header {
+            position: relative;
+            margin-bottom: 0;
+            border-radius: 0;
+            z-index: 3;
+
+            .accordion-button {
+                cursor: pointer;
+                font-weight: 600;
+                text-align: start;
+                padding: 0 42px 0 0;
+                border-bottom: 1px solid transparent;
+
+                span {
+                    top: 0;
+                    right: 0;
+                    width: 30px;
+                    height: 30px;
+                    position: absolute;
+                    border-radius: 8px;
+                    text-align: center;
+                    background-color: var(--neonGreenColor);
+
+                    i {
+                        left: 46%;
+                        font-size: 19px;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+        .accordion-collapse {
+            display: none;
+
+            &.open {
+                display: block;
+            }
+        }
+        .accordion-body {
+            border: none;
+            padding: 22px 0 0px;
+            margin: 18px 0 0 0;
+            border-top: 1px solid rgba(28, 46, 61, 0.1);
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .faq-box {
+        padding: {
+            right: 20px;
+            left: 20px;
+            top: 50px;
+        };
+    }
+
+}
+
+/* Min width 1400px */
+@media only screen and (min-width: 1400px) {
+
+    .faq-box {
+        padding: {
+            right: 60px;
+            left: 60px;
+            top: 53px;
+        }
+        .accordion-item {
+            .accordion-body {
+                p {
+                    max-width: 82%;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,92 @@
+<app-top-header />
+
+<app-navbar />
+
+<app-page-banner />
+
+<!-- Register -->
+<div class="container ptb-100">
+    <div class="section-title style-one text-center mb-35">
+        <h2>
+            Create <strong>Account</strong>
+        </h2>
+    </div>
+    <div class="row">
+        <div class="col-xxl-6 offset-xxl-3 col-lg-8 offset-lg-2">
+            <div class="login-form-wrap bg-haze">
+                <a href="https://facebook.com" class="login-btn d-block w-100 round-4 transition" target="_blank">
+                    <img src="img/icons/facebook.png" alt="Facebook"> Continue With <strong>Facebook</strong>
+                </a>
+                <a href="https://google.com" class="login-btn d-block w-100 round-4 transition" target="_blank">
+                    <img src="img/icons/google.png" alt="Facebook"> Continue With <strong>Google</strong>
+                </a>
+                <div class="or-text position-relative index-1">
+                    <span class="fs-14">
+                        or
+                    </span>
+                </div>
+                <div class="filter-radio-group style-two d-flex flex-wrap align-items-center justify-content-between mb-25">
+                    <div class="form-group bg-white round-4">
+                        <input type="radio" id="test1" name="radio-group_one">
+                        <label for="test1" class="d-flex align-items-center justify-content-between fw-semibold text-title">
+                            I'm a Client, Hiring People
+                        </label>
+                    </div>
+                    <div class="form-group bg-white round-4">
+                        <input type="radio" id="test2" name="radio-group_one">
+                        <label for="test2" class="d-flex align-items-center justify-content-between fw-semibold text-title">
+                            I'm looking for job
+                        </label>
+                    </div>
+                </div>
+                <form class="login-form">
+                    <div class="form-group mb-20">
+                        <label class="text-dark" for="fname">
+                            Name
+                        </label>
+                        <input type="text" name="fname" id="fname" placeholder="First Name" class="bg-white border-0 w-100 round-4">
+                    </div>
+                    <div class="form-group mb-20">
+                        <label class="text-dark" for="fname">
+                            Email
+                        </label>
+                        <input type="email" name="email" id="email" placeholder="Email address" class="bg-white border-0 w-100 round-4">
+                    </div>
+                    <div class="form-group style-two mb-30">
+                        <label class="text-dark" for="password_1">
+                            Password
+                        </label>
+                        <input [type]="isPassword1Visible ? 'text' : 'password'" [value]="password1" (input)="onPassword1Input($event)" name="password_1" id="password_1" placeholder="*****" class="pwd_1 bg-white border-0 w-100 round-4">
+                        <button type="button" (click)="togglePassword1Visibility()" class="pwd_open position-absolute p-0 border-0 bg-transparent transition">
+                            <i [ngClass]="isPassword1Visible ? 'ri-eye-line' : 'ri-eye-off-line'"></i>
+                        </button>
+                    </div>
+                    <div class="form-group style-two mb-30">
+                        <label class="text-dark" for="password_2">
+                            Confirm Password
+                        </label>
+                        <input [type]="isPassword2Visible ? 'text' : 'password'" [value]="password2" (input)="onPassword2Input($event)" name="password_2" id="password_2" placeholder="*****" class="pwd_2 bg-white border-0 w-100 round-4">
+                        <button type="button" (click)="togglePassword2Visibility()" class="pwd_open position-absolute p-0 border-0 bg-transparent transition">
+                            <i [ngClass]="isPassword2Visible ? 'ri-eye-line' : 'ri-eye-off-line'"></i>
+                        </button>
+                    </div>
+                    <div class="form-check checkbox">
+                        <input class="form-check-input" type="checkbox" id="test_2">
+                        <label class="form-check-label" for="test_2">
+                            By hitting the Register button, you agree to the <a routerLink="/terms-conditions" class="link style-one">Terms conditions</a> & <a routerLink="/privacy-policy" class="link style-one">Privacy Policy</a>
+                        </label>
+                    </div>
+                    <div class="text-center mt-20">
+                        <button class="btn style-four">
+                            Register Now
+                        </button>
+                        <p class="mb-0 mt-3">
+                            Have an account? <a routerLink="/login" class="link style-three fw-semibold">Login Now</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Register -->

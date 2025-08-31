@@ -1,0 +1,385 @@
+.testimonial-card {
+    .testimonial-header {
+        padding-bottom: 22px;
+
+        img {
+            display: inline !important;
+            width: auto !important;
+        }
+        .ratings {
+            span {
+                margin-right: 5px;
+            }
+            ul {
+                position: relative;
+                top: -1px;
+
+                li {
+                    margin-right: 2px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    i {
+                        font-size: 17px;
+                        color: var(--primaryColor);
+                    }
+                }
+            }
+        }
+    }
+    .client-quote {
+        font-size: 20px;
+        line-height: 32px;
+        margin: 26px 0 42px;
+    }
+    .client-info {
+        span {
+            margin-left: 5px; 
+            letter-spacing: 0.04em;   
+        }
+    }
+    &.style-one {
+        padding: 40px 30px;
+
+        .testimonial-header {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+        }
+    }
+    &.style-two {
+        padding: 40px 30px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+
+        .testimonial-header {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .client-info {
+            span {
+                color: var(--grayColorTwo);    
+            }
+        }
+    }
+}
+::ng-deep {
+    .testimonial-wrap {
+        &.style-one {
+            .owl-theme {
+                .owl-nav {
+                    margin-top: 0;
+
+                    [class*=owl-] {
+                        top: 50%;
+                        margin: 0;
+                        padding: 0;
+                        left: -40px;
+                        width: auto;
+                        height: auto;
+                        border-radius: 0;
+                        position: absolute;
+                        transform: translateY(-50%);
+                        background-color: transparent;
+
+                        &.owl-next {
+                            left: auto;
+                            right: -40px;
+                        }
+                    }
+                }
+            }
+        }
+        &.style-two {
+            .owl-theme {
+                .owl-nav {
+                    margin-top: 0;
+
+                    [class*=owl-] {
+                        top: 50%;
+                        margin: 0;
+                        padding: 0;
+                        left: -40px;
+                        width: auto;
+                        height: auto;
+                        border-radius: 0;
+                        filter: invert(1);
+                        position: absolute;
+                        transform: translateY(-50%);
+                        background-color: transparent;
+
+                        &.owl-next {
+                            left: auto;
+                            right: -40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .testimonial-card {
+        &.style-one, &.style-two {
+            padding: 35px 20px;
+        }
+        .client-quote {
+            font-size: 16px;
+            line-height: 28px;
+            margin: 25px 0 30px;
+        }
+        .testimonial-header {
+            flex-wrap: wrap;
+
+            .ratings {
+                width: 100%;
+                margin-top: 15px;
+            }
+        }
+    }
+    ::ng-deep {
+        .testimonial-wrap {
+            &.style-one {
+                .owl-theme {
+                    .owl-nav {
+                        margin-top: 25px;
+
+                        [class*=owl-] {
+                            top: 0;
+                            left: 0;
+                            position: relative;
+                            transform: translateY(0);
+                            margin: {
+                                left: 6px;
+                                right: 6px;
+                            };
+                            &.owl-next {
+                                left: 0;
+                                right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            &.style-two {
+                .owl-theme {
+                    .owl-nav {
+                        margin-top: 25px;
+
+                        [class*=owl-] {
+                            top: 0;
+                            left: 0;
+                            position: relative;
+                            transform: translateY(0);
+                            margin: {
+                                left: 6px;
+                                right: 6px;
+                            };
+                            &.owl-next {
+                                left: 0;
+                                right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    ::ng-deep {
+        .testimonial-wrap {
+            &.style-one {
+                .owl-theme {
+                    .owl-nav {
+                        margin-top: 25px;
+
+                        [class*=owl-] {
+                            top: 0;
+                            left: 0;
+                            position: relative;
+                            transform: translateY(0);
+                            margin: {
+                                left: 6px;
+                                right: 6px;
+                            };
+                            &.owl-next {
+                                left: 0;
+                                right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            &.style-two {
+                .owl-theme {
+                    .owl-nav {
+                        margin-top: 25px;
+
+                        [class*=owl-] {
+                            top: 0;
+                            left: 0;
+                            position: relative;
+                            transform: translateY(0);
+                            margin: {
+                                left: 6px;
+                                right: 6px;
+                            };
+                            &.owl-next {
+                                left: 0;
+                                right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    ::ng-deep {
+        .testimonial-wrap {
+            &.style-one {
+                .owl-theme {
+                    .owl-nav {
+                        margin-top: 25px;
+
+                        [class*=owl-] {
+                            top: 0;
+                            left: 0;
+                            position: relative;
+                            transform: translateY(0);
+                            margin: {
+                                left: 6px;
+                                right: 6px;
+                            };
+                            &.owl-next {
+                                left: 0;
+                                right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            &.style-two {
+                .owl-theme {
+                    .owl-nav {
+                        margin-top: 25px;
+
+                        [class*=owl-] {
+                            top: 0;
+                            left: 0;
+                            position: relative;
+                            transform: translateY(0);
+                            margin: {
+                                left: 6px;
+                                right: 6px;
+                            };
+                            &.owl-next {
+                                left: 0;
+                                right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    ::ng-deep {
+        .testimonial-wrap {
+            &.style-one {
+                .owl-theme {
+                    .owl-nav {
+                        [class*=owl-] {
+                            left: -10px;
+    
+                            &.owl-next {
+                                left: auto;
+                                right: -10px;
+                            }
+                        }
+                    }
+                }
+            }
+            &.style-two {
+                .owl-theme {
+                    .owl-nav {
+                        [class*=owl-] {
+                            left: -10px;
+    
+                            &.owl-next {
+                                left: auto;
+                                right: -10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1400px */
+@media only screen and (min-width: 1400px) {
+
+    .testimonial-card {
+        &.style-one {
+            padding: 40px 48px 40px 40px;
+        }
+        &.style-two {
+            padding: 50px 48px 42px 50px;
+        }
+    }
+
+}
+
+/* Min width 1920px */
+@media only screen and (min-width: 1920px) {
+
+    ::ng-deep {
+        .testimonial-wrap {
+            &.style-one {
+                .owl-theme {
+                    .owl-nav {
+                        [class*=owl-] {
+                            left: -90px;
+    
+                            &.owl-next {
+                                right: -90px;
+                            }
+                        }
+                    }
+                }
+            }
+            &.style-two {
+                .owl-theme {
+                    .owl-nav {
+                        [class*=owl-] {
+                            left: -90px;
+    
+                            &.owl-next {
+                                right: -90px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

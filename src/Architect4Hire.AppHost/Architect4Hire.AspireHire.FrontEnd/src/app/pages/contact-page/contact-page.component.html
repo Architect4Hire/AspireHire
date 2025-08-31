@@ -1,0 +1,85 @@
+<app-top-header />
+
+<app-navbar />
+
+<app-page-banner />
+
+<app-contact-info />
+
+<!-- Contact -->
+<div class="container pt-100 pb-70">
+    <div class="row align-items-center">
+        <div class="col-md-6 pe-xxl-2">
+            <div class="contact-content mb-30">
+                <div class="section-title style-one mb-30">
+                    <h2 class="mb-15">
+                        We’ll Love To Here From You, <strong>Message Us</strong>
+                    </h2>
+                    <p>
+                        We are always ready to connect you.
+                    </p>
+                </div>
+                <form class="contact-form">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group position-relative mb-20">
+                                <label class="text-title fw-medium" for="name">
+                                    Name
+                                </label>
+                                <input type="text" name="name" id="name" required class="bg-gray border-0 w-100 round-4" placeholder="Your Name">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                             <div class="form-group mb-20">
+                                <label class="text-title fw-medium" for="email">
+                                    Email
+                                </label>
+                                <input type="email" name="email" id="email" required class="bg-gray border-0 w-100 round-4" placeholder="Email address">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group mb-20">
+                                <label class="text-title fw-medium" for="url">
+                                    Subject
+                                </label>
+                                <input type="url" name="url" id="url" required class="bg-gray border-0 w-100 round-4" placeholder="Your Subject">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group mb-20">
+                                <label class="text-title fw-medium" for="url">
+                                    Your message here
+                                </label>
+                                <textarea name="messages" id="messages" cols="30" rows="10"  class="bg-gray border-0 w-100 round-4" placeholder="Your message here"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check checkbox mb-20">
+                                <input class="form-check-input" type="checkbox" id="test_20">
+                                <label class="form-check-label" for="test_20">
+                                    I accept to the <a routerLink="/terms-conditions" class="link style-one fs-15">Terms &amp; Conditions</a> and <a routerLink="/privacy-policy" class="link style-one fs-15">Privacy Policy</a>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn style-four">
+                                Send Message Now
+                            </button>
+                        </div>
+                    </div>
+                </form> 
+            </div>
+        </div>
+        <div class="col-md-6 ps-xxl-5 pe-xxl-1">
+            <div class="contact-img-wrap position-relative index-1 mb-30">
+                <img src="img/section-shape-4.png" alt="Shape" class="contact-shape position-absolute moveHorizontal sm-none">
+                <img src="img/contact-img.png" alt="Contact Image" class="contact-img">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Contact -->
+
+<app-footer />
+
+<app-back-to-top />

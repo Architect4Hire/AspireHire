@@ -1,0 +1,22 @@
+<app-top-header />
+
+<app-navbar />
+
+<!-- Dashboard -->
+<div class="container">
+    <div class="db-wrapper position-relative">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 position-relative">
+                <app-sidebar />
+            </div>
+            <div class="col-xl-9 col-lg-8">
+                <router-outlet />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Dashboard -->
+
+<app-footer />
+
+<app-back-to-top />

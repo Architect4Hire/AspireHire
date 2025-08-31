@@ -1,0 +1,560 @@
+// Employers
+.employer-card {
+    &.style-one {
+        .employer-header {
+            padding: 8px 10px 0;
+        }
+        .featured {
+            background-color: #EAE5FF;
+            display: inline-block;
+            border-radius: 4px;
+            line-height: 16px;
+            margin-right: 7px;
+            padding: 6px 9px;
+            color: #6C47FF;
+
+            &.style-two {
+                background-color: #FBE6E6;
+                color: #DF5858;    
+            }
+        }   
+        .add-to-bookmark {
+            width: 35px;
+            height: 35px;
+        }  
+        .employer-logo {
+            background-color: #F6F8FA;
+            height: 90px;
+            width: 90px;
+
+            img {
+                max-width: 42px;
+            }
+        }
+        h3 {
+            font-size: 20px;
+            margin: 23px 0 0;
+        }
+        .employer-location {
+            margin: 8px 0 35px;
+
+            img {
+                position: relative;
+                margin-right: 5px;
+                top: -2px;   
+            }
+        }
+        .link {
+            padding: 21px 15px;
+            color: var(--primaryColor);
+            border-top: 1px solid rgba(24,37,27,0.1);
+        }
+        &:hover {
+            transform: translateY(-5px);    
+        }
+    }
+    &.style-two {
+        padding: 20px 20px;
+
+        .employer-title-wrap {
+            width: 60%;
+
+            .employer-logo {
+                width: 108px;
+                height: 108px;
+                position: relative;
+                border: 1px dashed #BFCAD2;
+
+                img {
+                    max-width: 42px;
+                }
+            }
+            .employer-title {
+                width: calc(100% - 133px);
+                margin-left: auto;
+
+                h3 {
+                    margin: 5px 0 8px;    
+                }
+                .employer-location {
+                    img {
+                        position: relative;
+                        margin-right: 8px;
+                        top: -2px;   
+                    }
+                }
+            }
+        }
+        .employer-action {
+            width: 40%;
+
+            .open-jobs-link {
+                transition: var(--transition);
+                background-color: #EAEEF3;
+                display: inline-block;
+                padding: 7px 13px 9px;
+                border-radius: 4px;
+                line-height: 16px;
+                color: #3A6DAD;
+
+                &:hover {
+                    color: var(--whiteColor);
+                    background-color: #3A6DAD;
+                }
+            }
+            .add-to-bookmark {
+                width: 54px;
+                height: 54px;
+                margin-left: 20px;
+
+                &:hover {
+                    background-color: var(--primaryColor) !important;
+
+                    img {
+                        filter: brightness(0) invert(1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Sidebar
+.sidebar {
+    &.style-one {
+        padding: 40px 25px 40px;
+
+        .sidebar-title {
+            margin-bottom: 28px;
+            padding-bottom: 26px;
+            border-bottom: 1px solid rgba(24, 32, 27, 0.1);
+        }
+        .sidebar-widget {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(24, 32, 27, 0.1);
+
+            .sidebar-widget-title {
+                margin-bottom: 25px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+                padding-bottom: 0;
+                border-bottom: none;
+            }
+        }
+    }
+    .sidebar-widget {
+        &.style-two {
+            padding: 40px 25px 40px;
+            margin-bottom: 45px;
+
+            .sidebar-widget-title {
+                margin-bottom: 25px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        .candidate-card {
+            border-bottom: 1px solid rgba(24,37,27,0.1);
+            padding-bottom: 30px !important;
+
+            .add-to-bookmark {
+                width: 54px;
+                height: 54px;
+            }
+            &.style-two {
+                background-color: transparent;
+            }
+        }
+    }
+}
+.searchbox-widget {
+    img {
+        top: 20px;
+        left: 15px;
+        position: absolute;
+    }
+    input {
+        padding: 12px 20px 12px 45px;
+        height: 54px;
+    }
+}
+.location-filter {
+    img {
+        top: 16px;
+        left: 20px;
+    }
+    select {
+        padding-left: 52px;
+        height: 54px;
+        background: {
+            image: url(../../../../public/img/down-arrow.svg);
+            position: calc(100% - 20px) 50%;
+            size: 10px;
+        }; 
+    }
+}
+#category-select {
+    height: 54px;
+    padding: 13px 20px;
+    background: {
+        image: url(../../../../public/img/down-arrow.svg);
+        position: calc(100% - 20px) 50%;
+        size: 10px;
+    };
+}
+.tag-list {
+    margin-top: -15px;
+
+    &.style-two {
+        li {
+            a {
+                img {
+                    position: relative;
+                    margin-left: 6px;
+                    top: -1px;
+                }
+                &:hover {
+                    img {
+                        filter: brightness(0) invert(1);
+                    }
+                }
+            }
+        }
+    }
+    li {
+        display: inline-block;
+        margin: 11px 11px 0 0;
+
+        &:last-child {
+            margin-right: 0;
+        }
+        a {
+            font-size: 14px;
+            color: #23333F;
+            border-radius: 4px;
+            padding: 4.5px 9px 5.5px;
+            background-color: rgba(0, 0, 0, 0.1);
+            
+            &:hover {
+                background-color: var(--secondaryColor);
+                color: var(--whiteColor);
+            }
+        }
+    }
+}
+.filter-radio-group {
+    div {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    label {
+        span {
+            &:last-child {
+                font-weight: 500;
+                padding: 3px 8px;
+                line-height: 14px;
+                border-radius: 50px;
+                color: var(--primaryColor);
+            }
+        }
+    }
+    [type="radio"]:checked, [type="radio"]:not(:checked) {
+        position: absolute;
+        left: -9999px;
+    }
+    [type="radio"]:checked + label, [type="radio"]:not(:checked) + label {
+        cursor: pointer;
+        line-height: 20px;
+        position: relative;
+        padding-left: 34px;
+        display: inline-block;
+        color: var(--paraColor);
+    }
+    [type="radio"]:checked + label:before, [type="radio"]:not(:checked) + label:before {
+        left: 0;
+        top: -2px;
+        content: '';
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        border-radius: 4px;
+        background-color: var(--whiteColor);
+    }
+    [type="radio"]:checked + label:after, [type="radio"]:not(:checked) + label:after {
+        left: 0;
+        top: -2px;
+        width: 24px;
+        height: 24px;
+        content: "\EB7B";
+        line-height: 24px;
+        border-radius: 4px;
+        position: absolute;
+        text-align: center;
+        color: var(--whiteColor);
+        transition: all 0.2s ease;
+        background: var(--primaryColor);
+        font: {
+            family: remixicon;
+            size: 17px;
+        };
+    }
+    [type="radio"]:not(:checked) + label:after {
+        opacity: 0;
+        transform: scale(0);
+    }
+    [type="radio"]:checked + label:after {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+#filterModal {
+    transition: .3s;
+    right: auto;
+    left: 0;
+    
+    .offcanvas-header {
+        padding: 25px 25px;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+        
+        .close-btn {
+            transition: var(--transition);
+            font-size: 25px;
+            cursor: pointer;
+            top: 2px;
+
+            &:hover {
+                color: var(--primaryColor);
+            }
+        }
+    }
+    .offcanvas-body {
+        padding: 0 25px 25px;
+
+        .sidebar {
+            padding: 0;
+        }
+    }
+}
+.offcanvas {
+    &.offcanvas-end {
+        transform: translateX(-100%);
+    }
+    &.showing, &.show:not(.hiding) {
+        transform: none;
+    }
+}
+.offcanvas-backdrop {
+    &.fade {
+        visibility: hidden;
+        transition: .3s;
+
+        &.show {
+            visibility: visible;
+        }
+    }
+}
+.single-job-feature-wrap {
+    &.style-two {
+        .job-feature-item {
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.job-feature-item {
+    .feature-icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 13px;
+    }
+    .feature-info {
+        top: -3.5px;
+        position: relative;
+        width: calc(100% - 63px);
+        
+        h6 {
+            font-size: 14px;
+            margin-top: 3px;
+            line-height: 18px;
+        }
+    }
+}
+.post-metaoption {
+    &.style-one {
+        padding: 13px 0;
+        border: {
+            top: 1px solid rgba(24, 37, 27, 0.1);
+            bottom: 1px solid rgba(24, 37, 27, 0.1);
+        };
+    }
+    h6 {
+        width: 50%;
+        margin-bottom: 0;
+    }
+    .post-share {
+        width: 50%;
+    }
+}
+.social-profile {
+    li {
+        display: inline-block;
+        
+        a {
+            i {
+                line-height: 0.8;
+            }
+        }
+    }
+    &.style-one {
+        li {
+            margin-right: 13px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+.comp-map {
+    width: 100%;
+    height: 200px;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+.contact-employer {
+    .form-group {
+        position: relative;
+
+        label {
+            display: block;
+            margin-bottom: 11px;
+        }
+        input, textarea {
+            width: 100%;
+            color: var(--blackColor);
+            padding: 14px 20px 14px 25px;
+
+            &::placeholder {
+                color: #858F97;
+                opacity: 1;
+            }
+        }
+        input {
+            height: 70px;
+        }
+        textarea {
+            resize: none;
+            height: 160px;
+            padding-top: 20px;
+        }
+    }
+}
+
+/* Max width 575px */
+@media only screen and (max-width: 575px) {}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    // Employers
+    .employer-card {
+        &.style-two {
+            .employer-title-wrap, .employer-action {
+                width: 100%;
+                
+                .employer-logo {
+                    width: 95px;
+                    height: 95px;
+                }
+                .employer-title {
+                    width: calc(100% - 110px);
+                }
+            }
+            .employer-title-wrap {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    // Sidebar
+    .contact-employer {
+        .form-group {
+            input {
+                height: 56px;
+                padding: 12px 16px;
+            }
+            textarea {
+                padding: {
+                    top: 16px;
+                    left: 16px;
+                };
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+/* Max width 991px */
+@media only screen and (max-width: 991px) {}
+
+/* Min width 992px */
+@media only screen and (min-width: 992px) {}
+
+/* Max width 1199px */
+@media only screen and (max-width: 1199px) {
+
+    // Sidebar
+    .sidebar {
+        margin-top: 50px;
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/* Min width 1200px */
+@media only screen and (min-width: 1200px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1400px */
+@media only screen and (min-width: 1400px) {
+
+    // Sidebar
+    .sidebar {
+        &.style-one {
+            padding: 40px 30px 40px;
+        }
+    }
+
+}
+
+/* Min width 1400px to Max width 1599px */
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}
+
+/* Min width 1920px */
+@media only screen and (min-width: 1920px) {}

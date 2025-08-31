@@ -1,0 +1,89 @@
+<!-- Default -->
+<div
+    class="container pt-100 pb-70"
+    [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/pricing-plan'}"
+>
+    <div class="row align-items-center">
+        <div class="col-lg-6">
+            <div class="section-title style-one mb-30">
+                <h2 class="fw-medium">
+                    The Ultimate <strong>Job Portal</strong>
+                </h2>
+                <p class="mb-0">
+                    Signup now and start finding your job or talents.
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-6 text-lg-end">
+            <div class="post-btn mb-30">
+                <a routerLink="/jobs-left-sidebar" class="btn style-two me-sm-3">
+                    Looking For A Job
+                </a>
+                <a routerLink="/db-post-job" class="btn style-three">
+                    Post A Job
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Only for Home Demo - 2 & Pricing Page -->
+<div
+    class="container"
+    *ngIf="router.url === '/index-2' || router.url === '/pricing-plan'"
+>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="promo-content position-relative">
+                <div class="section-title style-two">
+                    <h2 class="pe-xxl-5">
+                        The Ultimate <strong>Job Portal</strong> For The <strong>Job Seeker</strong>
+                    </h2>
+                    <p class="mb-0">
+                        Register now and start finding your job or talents. To create an account, click on the "Sign Up" button at the top right  corner of the homepage.
+                    </p>
+                </div>
+                <div class="promo-btn">
+                    <a routerLink="/jobs-left-sidebar" class="btn style-four fw-medium">
+                        Looking For A Job
+                    </a>
+                    <a routerLink="/db-post-job" class="btn style-three fw-medium">
+                        Post A Job
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="promo-img-wrap position-relative index-1">
+                <div class="review-box position-absolute bg-white round-6">
+                    <div class="ratings d-flex align-items-center">
+                        <span class="fs-18 fw-bold text-title">
+                            4.9
+                        </span>
+                        <ul class="list-unstyle">
+                            <li><img src="img/icons/star.svg" alt="Star Icon"></li>
+                            <li><img src="img/icons/star.svg" alt="Star Icon"></li>
+                            <li><img src="img/icons/star.svg" alt="Star Icon"></li>
+                            <li><img src="img/icons/star.svg" alt="Star Icon"></li>
+                            <li><img src="img/icons/star.svg" alt="Star Icon"></li>
+                        </ul>
+                    </div>
+                    <p class="mb-0 fw-medium text-title">
+                        Average Ratings
+                    </p>
+                </div>
+                <div class="secure-box position-absolute d-flex flex-wrap align-items-center round-6">
+                    <div class="secure-icon d-flex flex-column align-items-center justify-content-center rounded-circle bg-white">
+                        <img src="img/icons/shield-lock.svg" alt="Shield">
+                    </div>
+                    <span class="fs-15 fw-bold text-title">
+                        Safe & Secure
+                    </span>
+                </div>
+                <img src="img/about/promo-img.png" alt="Promo Image" class="promo-img">
+                <img src="img/about/promo-shape.png" alt="Promo Image" class="promo-shape position-absolute">
+                <img src="img/about/promo-shape-2.png" alt="Promo Image" class="promo-shape-two position-absolute bounce">
+            </div>
+        </div>
+    </div>
+</div>

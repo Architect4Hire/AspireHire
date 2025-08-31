@@ -1,0 +1,106 @@
+<div class="container pb-70">
+    <div class="section-title style-two text-center mb-35">
+        <h2>
+            Find Your Answers From <strong>The FAQ</strong>
+        </h2>
+    </div>
+    <div class="faq-box position-relative round-10">
+        <div class="accordion pb-100">
+            <div class="accordion-item bg-transparent">
+                <div class="accordion-header">
+                    <div class="accordion-button bg-transparent" (click)="toggleSection(0)" [ngClass]="{ 'open': isSectionOpen(0) }">
+                        <span>
+                            <i class="ri-add-line plus"></i>
+                            <i class="ri-subtract-fill minus"></i>
+                        </span>
+                        How do I create an account on your job portal?
+                    </div>
+                </div>
+                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(0) }">
+                    <div class="accordion-body">
+                        <p class="fs-xxl-18 fw-medium mb-0">
+                            To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-transparent">
+                <div class="accordion-header">
+                    <div class="accordion-button bg-transparent" (click)="toggleSection(1)" [ngClass]="{ 'open': isSectionOpen(1) }">
+                        <span>
+                            <i class="ri-add-line plus"></i>
+                            <i class="ri-subtract-fill minus"></i>
+                        </span>
+                        What features are included in the premium plans?
+                    </div>
+                </div>
+                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(1) }">
+                    <div class="accordion-body">
+                        <p class="fs-xxl-18 fw-medium mb-0">
+                            To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-transparent">
+                <div class="accordion-header">
+                    <div class="accordion-button bg-transparent" (click)="toggleSection(2)" [ngClass]="{ 'open': isSectionOpen(2) }">
+                        <span>
+                            <i class="ri-add-line plus"></i>
+                            <i class="ri-subtract-fill minus"></i>
+                        </span>
+                        Can I track the status of my job applications?
+                    </div>
+                </div>
+                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(2) }">
+                    <div class="accordion-body">
+                        <p class="fs-xxl-18 fw-medium mb-0">
+                            To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-transparent">
+                <div class="accordion-header">
+                    <div class="accordion-button bg-transparent" (click)="toggleSection(3)" [ngClass]="{ 'open': isSectionOpen(3) }">
+                        <span>
+                            <i class="ri-add-line plus"></i>
+                            <i class="ri-subtract-fill minus"></i>
+                        </span>
+                        What is the refund policy for premium plans?
+                    </div>
+                </div>
+                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(3) }">
+                    <div class="accordion-body">
+                        <p class="fs-xxl-18 fw-medium mb-0">
+                            To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-transparent">
+                <div class="accordion-header">
+                    <div class="accordion-button bg-transparent" (click)="toggleSection(4)" [ngClass]="{ 'open': isSectionOpen(4) }">
+                        <span>
+                            <i class="ri-add-line plus"></i>
+                            <i class="ri-subtract-fill minus"></i>
+                        </span>
+                        Are there any resources for career development?
+                    </div>
+                </div>
+                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(4) }">
+                    <div class="accordion-body">
+                        <p class="fs-xxl-18 fw-medium mb-0">
+                            To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <div class="section-link fs-15 bg-white d-inline-block text-center mx-auto">
+                Didn’t find your answer?<a routerLink="/contact-us" class="ms-1 link style-one fw-bold">Ask Your Questions Here <img src="img/icons/right-arrow.svg" alt="Arrow"></a>
+            </div>
+        </div>
+    </div>
+</div>

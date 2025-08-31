@@ -1,0 +1,202 @@
+<!-- Default -->
+<div
+    class="wh-wrap style-one position-relative ptb-100"
+    [ngClass]="{'d-none': router.url === '/index-2'}"
+>
+    <div class="container">
+        <div class="row align-items-xl-start align-items-center">
+            <div class="col-lg-6">
+                <div class="wh-content">
+                    <div class="section-title style-one mb-20">
+                        <h2 class="text-white fw-medium">
+                            Why Should You Join <strong>Abezo Platform</strong>
+                        </h2>
+                        <p class="mb-0">
+                            We understand the importance of finding the right job. That's why we've created a platform where job seekers can explore a wide range of opportunities tailored to their skills.
+                        </p>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-item bg-transparent">
+                            <div class="accordion-header">
+                                <div class="accordion-button bg-transparent" (click)="toggleSection(0)" [ngClass]="{ 'open': isSectionOpen(0) }">
+                                    <img src="img/icons/check.svg" alt="Check Icon">
+                                    <span>
+                                        <i class="ri-add-line plus"></i>
+                                        <i class="ri-subtract-fill minus"></i>
+                                    </span>
+                                    Interview Reminders
+                                </div>
+                            </div>
+                            <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(0) }">
+                                <div class="accordion-body">
+                                    <p class="mb-0">
+                                        Voice bot directly calls the candidate on their mobile phone and reminds them of pending interview.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent">
+                            <div class="accordion-header">
+                                <div class="accordion-button bg-transparent" (click)="toggleSection(1)" [ngClass]="{ 'open': isSectionOpen(1) }">
+                                    <img src="img/icons/check.svg" alt="Check Icon">
+                                    <span>
+                                        <i class="ri-add-line plus"></i>
+                                        <i class="ri-subtract-fill minus"></i>
+                                    </span>
+                                    Remote Interviews with Lip Sync Detection
+                                </div>
+                            </div>
+                            <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(1) }">
+                                <div class="accordion-body">
+                                    <p class="mb-0">
+                                        Voice bot directly calls the candidate on their mobile phone and reminds them of pending interview.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent">
+                            <div class="accordion-header">
+                                <div class="accordion-button bg-transparent" (click)="toggleSection(2)" [ngClass]="{ 'open': isSectionOpen(2) }">
+                                    <img src="img/icons/check.svg" alt="Check Icon">
+                                    <span>
+                                        <i class="ri-add-line plus"></i>
+                                        <i class="ri-subtract-fill minus"></i>
+                                    </span>
+                                    Fresher & University Hiring
+                                </div>
+                            </div>
+                            <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(2) }">
+                                <div class="accordion-body">
+                                    <p class="mb-0">
+                                        Voice bot directly calls the candidate on their mobile phone and reminds them of pending interview.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a routerLink="/register" class="btn style-four">
+                        Join Abezo Now
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 pe-xxl-2">
+                <div class="wh-img-wrap position-relative">
+                    <div class="secure-box position-absolute d-flex flex-wrap align-items-center round-6 moveHorizontal">
+                        <div class="secure-icon d-flex flex-column align-items-center justify-content-center rounded-circle bg-white">
+                            <img src="img/icons/shield-lock.svg" alt="Shield">
+                        </div>
+                        <span class="fs-15 fw-bold text-title">
+                            Safe & Secure
+                        </span>
+                    </div>
+                    <div class="client-box position-absolute d-flex flex-wrap align-items-center bg-white round-6 bounce">
+                        <ul class="client-list list-unstyle">
+                            <li><img src="img/clients/client-6.jpg" alt="Client Image"></li>
+                            <li><img src="img/clients/client-5.jpg" alt="Client Image"></li>
+                            <li><img src="img/clients/client-7.jpg" alt="Client Image"></li>
+                            <li><img src="img/clients/client-8.jpg" alt="Client Image"></li>
+                        </ul>
+                        <p class="mb-0 fs-15 text-title">
+                            <span>1M+</span> Candidates
+                        </p>
+                    </div>
+                    <img src="img/why-join-us/wh-img-1.png" alt="Shape" class="wh-img">
+                    <img src="img/why-join-us/wh-shape-2.png" alt="Shape" class="wh-shape position-absolute animationFramesTwo">
+                    <img src="img/why-join-us/wh-shape-3.png" alt="Shape" class="wh-bg-shape position-absolute">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Only for Home Demo - 2 -->
+<div
+    class="wh-wrap style-two position-relative ptb-100"
+    *ngIf="router.url === '/index-2'"
+>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="wh-content">
+                    <div class="section-title style-two mb-10">
+                        <h2>
+                            Explore Our <strong>Pro Services</strong> To Get Your Dream Job
+                        </h2>
+                        <p class="mb-0">
+                            We understand the importance of finding the right job. That's why we've  created a platform where job seekers can explore a wide range of  opportunities tailored to their skills.
+                        </p>
+                    </div>
+                    <div class="accordion">
+                        <div class="accordion-item bg-transparent">
+                            <div class="accordion-header">
+                                <div class="accordion-button bg-transparent" (click)="toggleSection(0)" [ngClass]="{ 'open': isSectionOpen(0) }">
+                                    <img src="img/icons/check.svg" alt="Check Icon">
+                                    <span>
+                                        <i class="ri-add-line plus"></i>
+                                        <i class="ri-subtract-fill minus"></i>
+                                    </span>
+                                    Interview Reminders
+                                </div>
+                            </div>
+                            <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(0) }">
+                                <div class="accordion-body">
+                                    <p class="mb-0">
+                                        Voice bot directly calls the candidate on their mobile phone and reminds them of pending interview.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent">
+                            <div class="accordion-header">
+                                <div class="accordion-button bg-transparent" (click)="toggleSection(1)" [ngClass]="{ 'open': isSectionOpen(1) }">
+                                    <img src="img/icons/check.svg" alt="Check Icon">
+                                    <span>
+                                        <i class="ri-add-line plus"></i>
+                                        <i class="ri-subtract-fill minus"></i>
+                                    </span>
+                                    Remote Interviews with Lip Sync Detection
+                                </div>
+                            </div>
+                            <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(1) }">
+                                <div class="accordion-body">
+                                    <p class="mb-0">
+                                        Voice bot directly calls the candidate on their mobile phone and reminds them of pending interview.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-transparent">
+                            <div class="accordion-header">
+                                <div class="accordion-button bg-transparent" (click)="toggleSection(2)" [ngClass]="{ 'open': isSectionOpen(2) }">
+                                    <img src="img/icons/check.svg" alt="Check Icon">
+                                    <span>
+                                        <i class="ri-add-line plus"></i>
+                                        <i class="ri-subtract-fill minus"></i>
+                                    </span>
+                                    Fresher & University Hiring
+                                </div>
+                            </div>
+                            <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(2) }">
+                                <div class="accordion-body">
+                                    <p class="mb-0">
+                                        Voice bot directly calls the candidate on their mobile phone and reminds them of pending interview.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a routerLink="/pricing-plan" class="btn style-four">
+                        See Pricing
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 pe-xxl-2">
+                <div class="wh-img-wrap position-relative">
+                    <img src="img/why-join-us/wh-img-2.png" alt="Shape" class="wh-img">
+                    <img src="img/section-shape-5.png" alt="Shape" class="wh-shape-one position-absolute bounce">
+                    <img src="img/curve-shape.png" alt="Shape" class="wh-shape-two position-absolute animationFramesTwo sm-none">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

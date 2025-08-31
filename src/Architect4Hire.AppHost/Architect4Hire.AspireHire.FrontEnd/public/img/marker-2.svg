@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 32" width="25" height="32">
+	<title>marker</title>
+	<defs>
+		<image  width="25" height="32" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAgAgMAAACa8juVAAAAAXNSR0IB2cksfwAAAAlQTFRFAAAAAKJkANwAEE3PcQAAAAN0Uk5TAP8AaVI5rAAAAHpJREFUeJyNzrENg1AMhOH/gihQaqZgCQZAAilhtPSUCChgg7fPG4GC2Eg8paBI9RU++yzyjmNBlDXM6PECnoOKxsxG2RgLyMcWUO8Qbzy27jSG/i+zrbm58wlulfqu/ku9zX1N4osxpP9dTaYF9vVHvNkt6xk3bxf4AqDcOqGsgD+uAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+</svg>

@@ -1,0 +1,460 @@
+<app-top-header />
+
+<app-navbar />
+
+<app-page-banner />
+
+<!-- Employers -->
+<div class="container ptb-100">
+    <div class="row">
+        <div class="col-xl-4 order-xl-1 order-2">
+            <div class="sidebar style-one bg-aqua round-10">
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-widget-title fs-18 fw-semibold">
+                        Search
+                    </h3>
+                    <form class="searchbox-widget position-relative">
+                        <img src="img/icons/search-green.svg" alt="Search Icon" class="search-icon">
+                        <input type="search" class="bg-white w-100 round-4 text-paraThree border-0" placeholder="Company titles/keywords">
+                    </form>
+                </div>
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-widget-title fs-18 fw-semibold">
+                        Locations
+                    </h3>
+                    <div class="location-filter position-relative">
+                        <img src="img/icons/map-green-2.svg" alt="Map Icon" class="position-absolute">
+                        <select class="bg-white border-0 round-4 text-title">
+                            <option value="0">
+                                Montreal, Canada
+                            </option>
+                            <option value="1">
+                                Torento, Canada
+                            </option>
+                            <option value="2">
+                                Florida, USA
+                            </option>
+                            <option value="3">
+                                New York, USA
+                            </option>
+                            <option value="4">
+                                London, UK
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-widget-title fs-18 fw-semibold">
+                        Categories
+                    </h3>
+                    <select name="category-select" id="category-select" class="bg-white round-4 border-0 text-title mb-10">
+                        <option value="0">
+                            Data Science
+                        </option>
+                        <option value="1">
+                            Digital Marketing
+                        </option>
+                        <option value="2">
+                            Video Editing
+                        </option>
+                        <option value="3">
+                            Web Development
+                        </option>
+                        <option value="4">
+                            Content Marketing
+                        </option>
+                    </select>
+                    <ul class="tag-list style-two list-unstyle mt-0">
+                        <li>
+                            <a routerLink="/jobs-grid">
+                                Graphic Design <img src="img/icons/close-red.svg" alt="Icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/jobs-grid">
+                                Video Editiong <img src="img/icons/close-red.svg" alt="Icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/jobs-grid">
+                                Web Development <img src="img/icons/close-red.svg" alt="Icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-widget-title fs-18 fw-semibold">
+                        Job Openiing
+                    </h3>
+                    <div class="filter-radio-group">
+                        <div class="form-group">
+                            <input type="radio" id="test1" name="radio-group_one">
+                            <label for="test1" class="d-flex align-items-center justify-content-between">
+                                <span class="text-title">
+                                    Full Time
+                                </span>
+                                <span class="fs-14 d-inline-block bg-white text-green">
+                                    12
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" id="test2" name="radio-group_one">
+                            <label for="test2" class="d-flex align-items-center justify-content-between">
+                                <span class="text-title">
+                                    Part Time
+                                </span>
+                                <span class="fs-14 d-inline-block bg-white text-green">
+                                    32
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" id="test3" name="radio-group_one">
+                            <label for="test3" class="d-flex align-items-center justify-content-between">
+                                <span class="text-title">
+                                    Fixed Salary
+                                </span>
+                                <span class="fs-14 d-inline-block bg-white text-green">
+                                    17
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" id="test4" name="radio-group_one">
+                            <label for="test4" class="d-flex align-items-center justify-content-between">
+                                <span class="text-title">
+                                    Freelance
+                                </span>
+                                <span class="fs-14 d-inline-block bg-white text-green">
+                                    04
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-widget-title fs-18 fw-semibold">
+                        Date Posted
+                    </h3>
+                    <div class="filter-radio-group">
+                        <div class="form-group">
+                            <input type="radio" id="test50" name="radio-group_three">
+                            <label for="test50" class="d-flex align-items-center justify-content-between">
+                                <span class="text-title">
+                                    Any Time
+                                </span>
+                                <span class="fs-14 d-inline-block bg-white text-green">
+                                    12
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" id="test51" name="radio-group_three">
+                            <label for="test51" class="d-flex align-items-center justify-content-between">
+                                <span class="text-title">
+                                    Past Month
+                                </span>
+                                <span class="fs-14 d-inline-block bg-white text-green">
+                                    32
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" id="test52" name="radio-group_three">
+                            <label for="test52" class="d-flex align-items-center justify-content-between">
+                                <span class="text-title">
+                                    Past Weeks
+                                </span>
+                                <span class="fs-14 d-inline-block bg-white text-green">
+                                    17
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="radio" id="test53" name="radio-group_three">
+                            <label for="test53" class="d-flex align-items-center justify-content-between">
+                                <span class="text-title">
+                                    Past 24 Hours
+                                </span>
+                                <span class="fs-14 d-inline-block bg-white text-green">
+                                    04
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-8 order-xl-2 order-1 ps-xxl-5">
+            <div class="row align-items-center mb-20">
+                <div class="col-xl-4 col-md-4">
+                    <p class="filter-result">
+                        Showing <strong class="text-title">1 - 8</strong> of 211 results
+                    </p>
+                </div>
+                <div class="col-xxl-3 offset-xxl-2 col-xl-3 offset-xl-2 col-md-4">
+                    <select class="filter-cat border-0 mb-25">
+                        <option value="0">
+                            Sort By(Default)
+                        </option>
+                        <option value="1">
+                            Sort By Recent
+                        </option>
+                        <option value="2">
+                            Sort By Oldest
+                        </option>
+                    </select>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-md-4">
+                    <select class="filter-cat border-0 mb-25">
+                        <option value="0">
+                            08 per page
+                        </option>
+                        <option value="1">
+                            15 per page
+                        </option>
+                        <option value="2">
+                            20 per page
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="employer-card style-two bg-haze d-flex flex-wrap align-items-center justify-content-between round-10 mb-20 transition">
+                <div class="employer-title-wrap d-flex flex-wrap align-items-center">
+                    <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center round-20">
+                        <img src="img/employer/solit-it.svg" alt="Employre Logo">
+                    </div>
+                    <div class="employer-title">
+                        <span class="fs-14 d-block">
+                            100-120 Team Members
+                        </span>
+                        <h3 class="fs-20 fw-semibold">
+                            <a routerLink="/employer-details">
+                                Solit IT Solution
+                            </a>
+                        </h3>
+                        <span class="employer-location d-block fs-14">
+                            <img src="img/icons/map-blue.svg" alt="Map Icon">
+                            Washington, USA
+                        </span>
+                    </div>
+                </div>
+                <div class="employer-action d-flex flex-wrap align-items-center justify-content-md-end justify-content-between">
+                    <a routerLink="/job-details-sidebar" class="open-jobs-link fs-14 fw-medium">
+                        3 Open Jobs
+                    </a>
+                    <button class="add-to-bookmark bg-white border-0 d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                        <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                    </button>
+                </div>
+            </div>
+            <div class="employer-card style-two bg-haze d-flex flex-wrap align-items-center justify-content-between round-10 mb-20 transition">
+                <div class="employer-title-wrap d-flex flex-wrap align-items-center">
+                    <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center round-20">
+                        <img src="img/employer/google.svg" alt="Employre Logo">
+                    </div>
+                    <div class="employer-title">
+                        <span class="fs-14 d-block">
+                            1000-2000 Team Members
+                        </span>
+                        <h3 class="fs-20 fw-semibold">
+                            <a routerLink="/employer-details">
+                                Gexon Solution
+                            </a>
+                        </h3>
+                        <span class="employer-location d-block fs-14">
+                            <img src="img/icons/map-blue.svg" alt="Map Icon">
+                            Montreal, CA
+                        </span>
+                    </div>
+                </div>
+                <div class="employer-action d-flex flex-wrap align-items-center justify-content-md-end justify-content-between">
+                    <a routerLink="/job-details-sidebar" class="open-jobs-link fs-14 fw-medium">
+                        5 Open Jobs
+                    </a>
+                    <button class="add-to-bookmark bg-white border-0 d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                        <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                    </button>
+                </div>
+            </div>
+            <div class="employer-card style-two bg-haze d-flex flex-wrap align-items-center justify-content-between round-10 mb-20 transition">
+                <div class="employer-title-wrap d-flex flex-wrap align-items-center">
+                    <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center round-20">
+                        <img src="img/employer/hexa.svg" alt="Employre Logo">
+                    </div>
+                    <div class="employer-title">
+                        <span class="fs-14 d-block">
+                            200-300 Team Members
+                        </span>
+                        <h3 class="fs-20 fw-semibold">
+                            <a routerLink="/employer-details">
+                                Mistral IT Solution
+                            </a>
+                        </h3>
+                        <span class="employer-location d-block fs-14">
+                            <img src="img/icons/map-blue.svg" alt="Map Icon">
+                            Vancouver, CA
+                        </span>
+                    </div>
+                </div>
+                <div class="employer-action d-flex flex-wrap align-items-center justify-content-md-end justify-content-between">
+                    <a routerLink="/job-details-sidebar" class="open-jobs-link fs-14 fw-medium">
+                        13 Open Jobs
+                    </a>
+                    <button class="add-to-bookmark bg-white border-0 d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                        <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                    </button>
+                </div>
+            </div>
+            <div class="employer-card style-two bg-haze d-flex flex-wrap align-items-center justify-content-between round-10 mb-20 transition">
+                <div class="employer-title-wrap d-flex flex-wrap align-items-center">
+                    <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center round-20">
+                        <img src="img/employer/asana.svg" alt="Employre Logo">
+                    </div>
+                    <div class="employer-title">
+                        <span class="fs-14 d-block">
+                            300-400 Team Members
+                        </span>
+                        <h3 class="fs-20 fw-semibold">
+                            <a routerLink="/employer-details">
+                                Asana Solution
+                            </a>
+                        </h3>
+                        <span class="employer-location d-block fs-14">
+                            <img src="img/icons/map-blue.svg" alt="Map Icon">
+                            Washington, USA
+                        </span>
+                    </div>
+                </div>
+                <div class="employer-action d-flex flex-wrap align-items-center justify-content-md-end justify-content-between">
+                    <a routerLink="/job-details-sidebar" class="open-jobs-link fs-14 fw-medium">
+                        11 Open Jobs
+                    </a>
+                    <button class="add-to-bookmark bg-white border-0 d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                        <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                    </button>
+                </div>
+            </div>
+            <div class="employer-card style-two bg-haze d-flex flex-wrap align-items-center justify-content-between round-10 mb-20 transition">
+                <div class="employer-title-wrap d-flex flex-wrap align-items-center">
+                    <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center round-20">
+                        <img src="img/employer/geometric.svg" alt="Employre Logo">
+                    </div>
+                    <div class="employer-title">
+                        <span class="fs-14 d-block">
+                            400-520 Team Members
+                        </span>
+                        <h3 class="fs-20 fw-semibold">
+                            <a routerLink="/employer-details">
+                                Medizo Solution
+                            </a>
+                        </h3>
+                        <span class="employer-location d-block fs-14">
+                            <img src="img/icons/map-blue.svg" alt="Map Icon">
+                            Torento, CA
+                        </span>
+                    </div>
+                </div>
+                <div class="employer-action d-flex flex-wrap align-items-center justify-content-md-end justify-content-between">
+                    <a routerLink="/job-details-sidebar" class="open-jobs-link fs-14 fw-medium">
+                        12 Open Jobs
+                    </a>
+                    <button class="add-to-bookmark bg-white border-0 d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                        <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                    </button>
+                </div>
+            </div>
+            <div class="employer-card style-two bg-haze d-flex flex-wrap align-items-center justify-content-between round-10 mb-20 transition">
+                <div class="employer-title-wrap d-flex flex-wrap align-items-center">
+                    <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center round-20">
+                        <img src="img/employer/supabase.svg" alt="Employre Logo">
+                    </div>
+                    <div class="employer-title">
+                        <span class="fs-14 d-block">
+                            200-320 Team Members
+                        </span>
+                        <h3 class="fs-20 fw-semibold">
+                            <a routerLink="/employer-details">
+                                Supabase
+                            </a>
+                        </h3>
+                        <span class="employer-location d-block fs-14">
+                            <img src="img/icons/map-blue.svg" alt="Map Icon">
+                            Montreal, CA
+                        </span>
+                    </div>
+                </div>
+                <div class="employer-action d-flex flex-wrap align-items-center justify-content-md-end justify-content-between">
+                    <a routerLink="/job-details-sidebar" class="open-jobs-link fs-14 fw-medium">
+                        14 Open Jobs
+                    </a>
+                    <button class="add-to-bookmark bg-white border-0 d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                        <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                    </button>
+                </div>
+            </div>
+            <div class="employer-card style-two bg-haze d-flex flex-wrap align-items-center justify-content-between round-10 mb-20 transition">
+                <div class="employer-title-wrap d-flex flex-wrap align-items-center">
+                    <div class="employer-logo bg-white d-flex flex-column align-items-center justify-content-center round-20">
+                        <img src="img/employer/solit-it.svg" alt="Employre Logo">
+                    </div>
+                    <div class="employer-title">
+                        <span class="fs-14 d-block">
+                            300-400 Team Members
+                        </span>
+                        <h3 class="fs-20 fw-semibold">
+                            <a routerLink="/employer-details">
+                                Zoom Coprotion
+                            </a>
+                        </h3>
+                        <span class="employer-location d-block fs-14">
+                            <img src="img/icons/map-blue.svg" alt="Map Icon">
+                            Washington, USA
+                        </span>
+                    </div>
+                </div>
+                <div class="employer-action d-flex flex-wrap align-items-center justify-content-md-end justify-content-between">
+                    <a routerLink="/job-details-sidebar" class="open-jobs-link fs-14 fw-medium">
+                        12 Open Jobs
+                    </a>
+                    <button class="add-to-bookmark bg-white border-0 d-flex flex-column justify-content-center align-items-center rounded-circle transition">
+                        <img src="img/icons/bookmark.svg" alt="Bookmark Icon" class="transition">
+                    </button>
+                </div>
+            </div>
+            <ul class="page-nav d-flex align-items-center justify-content-center list-unstyle mt-30">
+                <li>
+                    <a routerLink="." class="d-flex flex-column align-items-center justify-content-center rounded-circle fw-semibold text-title">
+                        <i class="ri-arrow-left-line"></i>
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="." class="d-flex flex-column align-items-center justify-content-center rounded-circle fw-semibold">
+                        1
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="." class="active d-flex flex-column align-items-center justify-content-center rounded-circle fw-semibold text-title">
+                        2
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="." class="d-flex flex-column align-items-center justify-content-center rounded-circle fw-semibold text-title">
+                        3
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="." class="d-flex flex-column align-items-center justify-content-center rounded-circle fw-semibold text-title">
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- End Employers -->
+
+<app-footer />
+
+<app-back-to-top />

@@ -1,0 +1,45 @@
+.brand-wrap {
+    background-color: #18251B;
+    padding: 75px 0;
+}
+.brand-wrapper {
+    background-color: #1E2830;
+
+    .brand-slider {
+        margin: 0 20px;
+    }
+}
+.brand-logo {
+    text-align: center;
+    
+    img {
+        display: inline !important;
+        width: auto !important;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .brand-wrapper {
+        padding: {
+            left: 20px;
+            right: 20px;
+        }
+        .brand-slider {
+            margin: 0;
+        }
+    }
+
+}
+
+/* Min width 1400px */
+@media only screen and (min-width: 1400px) {
+
+    .brand-wrapper {
+        .brand-slider {
+            margin: 0 92px;
+        }
+    }
+
+}

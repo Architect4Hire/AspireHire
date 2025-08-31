@@ -1,0 +1,23 @@
+.navbar-top {
+    background-color: #BFCED9;
+    padding: {
+        top: 6px;
+        bottom: 6px;
+    };
+    p {
+        color: #364D5F;
+
+        .link {
+            color: #364D5F;
+            margin-left: 3px;
+
+            img {
+                top: -2px;
+                margin-left: 3px;
+            }
+            &::after {
+                background-color: #364D5F;
+            }
+        }
+    }
+}

@@ -1,0 +1,207 @@
+.pricing-switch-wrap {
+    width: 248px;
+    margin-right: 50px;
+
+    .pricing-arrow {
+        bottom: -26px;
+        right: -111px;
+    }
+    .pricing_switch {
+        width: 56px;
+        height: 32px;
+        position: relative;
+        display: inline-block;
+
+        input {
+            display: none;
+        }
+        &.active {
+            .pricing_slider {
+                background-color: var(--darkColor);
+
+                &:before {
+                    transform: translateX(25px);
+                }
+            }
+            .off {
+                color: #23333F;
+            }
+            .on {
+                color: #5F6E7A;
+            }
+        }
+    }
+    .pricing_slider {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;
+        transition: .4s;
+        position: absolute;
+        background-color: var(--darkColor);
+
+        &:before {
+            left: 4px;
+            width: 22px;
+            bottom: 5px;
+            content: "";
+            height: 22px;
+            transition: .4s;
+            position: absolute;
+            background-color: var(--lightGreenColor);
+        }
+        &.round {
+            border-radius: 50px;
+        
+            &:before {
+                border-radius: 50%;
+            }
+        }
+    }
+    .on, .off {
+        position: absolute;
+        top: 3px;
+        font: {
+            size: 16px;
+            weight: 500;
+        };
+    }
+    .on {
+        left: -75px;
+        color: #23333F;
+    }
+    .off {
+        right: -60px;
+        color: #5F6E7A;
+    }
+}
+.pricing-card {
+    padding: 38px 30px 45px;
+
+    &.style-one {
+        border: 2px solid var(--primaryColor);
+        background-color: rgba(0, 162, 100, 0.05);
+
+        .pricing-tag {
+            color: var(--primaryColor);
+
+            .doller-sign {
+                color: var(--primaryColor);
+            }
+        }
+    }
+    &.style-two {
+        border: 2px solid var(--darkColor);
+        background-color: rgba(24, 37, 27, 0.05);
+
+        .pricing-tag {
+            color: var(--darkColor);
+
+            .doller-sign {
+                color: var(--darkColor);
+            }
+        }
+    }
+    &.style-three {
+        border: 2px solid var(--secondaryColor);
+        background-color: rgba(254, 140, 35, 0.05);
+
+        .pricing-tag {
+            color: var(--secondaryColor);
+
+            .doller-sign {
+                color: var(--secondaryColor);
+            }
+        }
+    }
+    h6 {
+        letter-spacing: 0.1em;
+        margin-bottom: 13px;
+    }
+    .pricing-tag {
+        line-height: 46px;
+        margin-bottom: 20px;
+        font: {
+            size: 46px;
+            weight: 800;
+        };
+        .doller-sign {
+            position: relative;
+            font-size: 28px;
+            top: -14px;
+        }
+        span {
+            font-size: 16px;
+
+            &:last-child {
+                position: relative;
+                left: -3px;
+                top: -1px;
+            }
+        }
+        &.montlypricing {
+            &.active {
+                display: none;
+            }
+        }
+        &.yearlypricing {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+    }
+    p {
+        margin-bottom: 30px;
+    }
+    .pricing-features {
+        margin-bottom: 35px;
+
+        li {
+            margin-bottom: 10.2px;
+            position: relative;
+            padding-left: 34px;
+            font-weight: 600;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &.unchecked {
+                color:#8F979D;
+            }
+            img {
+                position: absolute;
+                top: 6px;
+                left: 0;    
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .pricing-card {
+        padding: 30px 25px 40px;
+
+        .pricing-features {
+            li {
+                img {
+                    top: 5px;    
+                }    
+            }    
+        }
+    }
+
+}
+
+/* Min width 1400px */
+@media only screen and (min-width: 1400px) {
+
+    .pricing-card {
+        padding: 38px 50px 50px;
+    }
+
+}

@@ -1,0 +1,121 @@
+@use "../../common/featured-jobs/featured-jobs.component";
+@use "../../common/candidates/candidates.component";
+
+.db-counter-card {
+    padding: 30px;
+    background-color: #F3F4F4;
+
+    .db-counter-icon {
+        width: 65px;
+        height: 65px;
+        background-color: var(--whiteColor);
+    }
+    .db-counter-text {
+        text-align: end;
+        
+        span {
+            font-weight: 500;    
+        }
+        h3 {
+            line-height: 24px;
+            margin: 10px 0 0;
+            font: {
+                size: 25px;
+                weight: 800;
+            };
+        }
+    }
+}
+.db-content-box {
+    background-color: #F3F4F4;
+    padding: 30px;
+}
+.job-card {
+    border: 1px solid #F3F4F4;
+
+    .job-action {
+        button {
+            width: 35px !important;
+            height: 35px !important;
+            margin-left: 10px !important;
+    
+            i {
+                position: relative;
+                font-size: 17px;
+                top: 1px;
+            }
+            &:hover {
+                color: var(--whiteColor);
+            }
+        }
+    }
+}
+.candidate-card {
+    border: 1px solid #F3F4F4;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .db-counter-card {
+        padding: 20px;
+    
+        .db-counter-text {
+            h3 {
+                margin-top: 5px;
+            }
+        }
+    }
+    .db-content-box {
+        padding: 20px;
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .db-counter-card {
+        padding: 25px;
+    }
+    .db-content-box {
+        padding: 25px;
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/* Min width 1200px */
+@media only screen and (min-width: 1200px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1400px */
+@media only screen and (min-width: 1400px) {
+
+    .db-counter-card {
+        .db-counter-icon {
+            width: 78px;
+            height: 78px;
+        }
+        .db-counter-text {
+            h3 {
+                font-size: 34px;
+                line-height: 24px;
+            }
+        }
+    }
+
+}
+
+/* Min width 1400px to Max width 1599px */
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}
+
+/* Min width 1920px */
+@media only screen and (min-width: 1920px) {}

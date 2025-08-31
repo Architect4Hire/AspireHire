@@ -1,0 +1,833 @@
+<app-top-header />
+
+<app-navbar />
+
+<app-page-banner />
+
+<!-- FAQ -->
+<div class="container ptb-100">
+    <div class="section-title style-two text-center mb-35">
+        <h2>
+            Find Your Answers From <strong>The FAQ</strong>
+        </h2>
+    </div>
+    <ul class="nav nav-tabs faq-tablist style-two d-flex justify-content-center mb-30">
+        <li class="nav-item">
+            <button class="nav-link" (click)="switchTab($event, 'tab1')" [ngClass]="{'active': currentTab === 'tab1'}">
+                All
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" (click)="switchTab($event, 'tab2')" [ngClass]="{'active': currentTab === 'tab2'}">
+                Marketing
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" (click)="switchTab($event, 'tab3')" [ngClass]="{'active': currentTab === 'tab3'}">
+                Buying
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" (click)="switchTab($event, 'tab4')" [ngClass]="{'active': currentTab === 'tab4'}">
+                Payments
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" (click)="switchTab($event, 'tab5')" [ngClass]="{'active': currentTab === 'tab5'}">
+                Employer
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" (click)="switchTab($event, 'tab6')" [ngClass]="{'active': currentTab === 'tab6'}">
+                Account
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" (click)="switchTab($event, 'tab7')" [ngClass]="{'active': currentTab === 'tab7'}">
+                Candidates
+            </button>
+        </li>
+        <li class="nav-item">
+            <button class="nav-link" (click)="switchTab($event, 'tab8')" [ngClass]="{'active': currentTab === 'tab8'}">
+                Terms & Conditions
+            </button>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane" id="tab1" *ngIf="currentTab === 'tab1'">
+            <div class="faq-box position-relative round-10">
+                <div class="accordion">
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(0)" [ngClass]="{ 'open': isSectionOpen(0) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                How do I create an account on your job portal?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(0) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(1)" [ngClass]="{ 'open': isSectionOpen(1) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                What features are included in the premium plans?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(1) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(2)" [ngClass]="{ 'open': isSectionOpen(2) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                Can I track the status of my job applications?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(2) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(3)" [ngClass]="{ 'open': isSectionOpen(3) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                What is the refund policy for premium plans?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(3) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(4)" [ngClass]="{ 'open': isSectionOpen(4) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                Are there any resources for career development?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(4) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab2" *ngIf="currentTab === 'tab2'">
+            <div class="faq-box position-relative round-10">
+                <div class="accordion">
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(0)" [ngClass]="{ 'open': isSectionOpen(0) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                What features are included in the premium plans?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(0) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(1)" [ngClass]="{ 'open': isSectionOpen(1) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                How do I create an account on your job portal?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(1) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(2)" [ngClass]="{ 'open': isSectionOpen(2) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                Can I track the status of my job applications?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(2) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(3)" [ngClass]="{ 'open': isSectionOpen(3) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                What is the refund policy for premium plans?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(3) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(4)" [ngClass]="{ 'open': isSectionOpen(4) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                Are there any resources for career development?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(4) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab3" *ngIf="currentTab === 'tab3'">
+            <div class="faq-box position-relative round-10">
+                <div class="accordion">
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(0)" [ngClass]="{ 'open': isSectionOpen(0) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                Can I track the status of my job applications?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(0) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(1)" [ngClass]="{ 'open': isSectionOpen(1) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                How do I create an account on your job portal?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(1) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(2)" [ngClass]="{ 'open': isSectionOpen(2) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                What features are included in the premium plans?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(2) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(3)" [ngClass]="{ 'open': isSectionOpen(3) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                What is the refund policy for premium plans?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(3) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(4)" [ngClass]="{ 'open': isSectionOpen(4) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                Are there any resources for career development?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(4) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab4" *ngIf="currentTab === 'tab4'">
+            <div class="faq-box position-relative round-10">
+                <div class="accordion">
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(0)" [ngClass]="{ 'open': isSectionOpen(0) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                How do I create an account on your job portal?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(0) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(1)" [ngClass]="{ 'open': isSectionOpen(1) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                What features are included in the premium plans?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(1) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(2)" [ngClass]="{ 'open': isSectionOpen(2) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                Can I track the status of my job applications?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(2) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(3)" [ngClass]="{ 'open': isSectionOpen(3) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                What is the refund policy for premium plans?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(3) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(4)" [ngClass]="{ 'open': isSectionOpen(4) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                Are there any resources for career development?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(4) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab5" *ngIf="currentTab === 'tab5'">
+            <div class="faq-box position-relative round-10">
+                <div class="accordion">
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(0)" [ngClass]="{ 'open': isSectionOpen(0) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                How do I create an account on your job portal?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(0) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(1)" [ngClass]="{ 'open': isSectionOpen(1) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                What features are included in the premium plans?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(1) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(2)" [ngClass]="{ 'open': isSectionOpen(2) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                Can I track the status of my job applications?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(2) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(3)" [ngClass]="{ 'open': isSectionOpen(3) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                What is the refund policy for premium plans?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(3) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(4)" [ngClass]="{ 'open': isSectionOpen(4) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                Are there any resources for career development?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(4) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab6" *ngIf="currentTab === 'tab6'">
+            <div class="faq-box position-relative round-10">
+                <div class="accordion">
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(0)" [ngClass]="{ 'open': isSectionOpen(0) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                How do I create an account on your job portal?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(0) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(1)" [ngClass]="{ 'open': isSectionOpen(1) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                What features are included in the premium plans?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(1) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(2)" [ngClass]="{ 'open': isSectionOpen(2) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                Can I track the status of my job applications?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(2) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(3)" [ngClass]="{ 'open': isSectionOpen(3) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                What is the refund policy for premium plans?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(3) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(4)" [ngClass]="{ 'open': isSectionOpen(4) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                Are there any resources for career development?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(4) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab7" *ngIf="currentTab === 'tab7'">
+            <div class="faq-box position-relative round-10">
+                <div class="accordion">
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(0)" [ngClass]="{ 'open': isSectionOpen(0) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                How do I create an account on your job portal?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(0) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(1)" [ngClass]="{ 'open': isSectionOpen(1) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                What features are included in the premium plans?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(1) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(2)" [ngClass]="{ 'open': isSectionOpen(2) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                Can I track the status of my job applications?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(2) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(3)" [ngClass]="{ 'open': isSectionOpen(3) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                What is the refund policy for premium plans?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(3) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(4)" [ngClass]="{ 'open': isSectionOpen(4) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                Are there any resources for career development?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(4) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane" id="tab8" *ngIf="currentTab === 'tab8'">
+            <div class="faq-box position-relative round-10">
+                <div class="accordion">
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(0)" [ngClass]="{ 'open': isSectionOpen(0) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                How do I create an account on your job portal?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(0) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(1)" [ngClass]="{ 'open': isSectionOpen(1) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                What features are included in the premium plans?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(1) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(2)" [ngClass]="{ 'open': isSectionOpen(2) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                Can I track the status of my job applications?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(2) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(3)" [ngClass]="{ 'open': isSectionOpen(3) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                What is the refund policy for premium plans?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(3) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-transparent">
+                        <div class="accordion-header">
+                            <div class="accordion-button bg-transparent" (click)="toggleSection(4)" [ngClass]="{ 'open': isSectionOpen(4) }">
+                                <span>
+                                    <i class="ri-add-line plus"></i>
+                                    <i class="ri-subtract-fill minus"></i>
+                                </span>
+                                Are there any resources for career development?
+                            </div>
+                        </div>
+                        <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(4) }">
+                            <div class="accordion-body">
+                                <p class="fs-xxl-18 fw-medium mb-0">
+                                    To create an account, click on the "Sign Up" button at the top right  corner of the homepage, and fill in the required information such as  your email address, name, and password. You can also sign up using your  social media accounts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End FAQ -->
+
+<app-ask-questions />
+
+<app-footer />
+
+<app-back-to-top />

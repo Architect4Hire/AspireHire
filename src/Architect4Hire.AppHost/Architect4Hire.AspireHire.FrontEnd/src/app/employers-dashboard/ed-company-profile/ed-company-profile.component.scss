@@ -1,0 +1,62 @@
+@use "../../pages/blog-details-left-sidebar-page/blog-details-left-sidebar-page.component";
+
+.db-content-box {
+    background-color: #F3F4F4;
+    padding: 30px;
+}
+.user-photo-wrap {
+    .file-upload-btn {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .file-upload__label {
+        width: 37px;
+        height: 37px;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+
+        img {
+            position: relative;
+            cursor: pointer;
+            top: -1px;
+        }
+    }
+    .file-upload__input {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        opacity: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+    }
+}
+.comment-form {
+    margin-bottom: 25px;
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .db-content-box {
+        padding: 20px;
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .db-content-box {
+        padding: 25px;
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}

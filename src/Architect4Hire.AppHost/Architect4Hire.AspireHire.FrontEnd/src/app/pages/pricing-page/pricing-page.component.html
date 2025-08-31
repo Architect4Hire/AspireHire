@@ -1,0 +1,184 @@
+<app-top-header />
+
+<app-navbar />
+
+<app-page-banner />
+
+<!-- Pricing -->
+<div class="container pt-100 pb-70">
+    <div class="section-title style-two text-center mb-20">
+        <h2 class="mb-0">
+            <strong>Choose A Plan</strong> That Fits You
+        </h2>
+    </div>
+    <div class="pricing-switch-wrap style-one position-relative d-flex justify-content-center ms-md-auto mx-auto">
+        <img src="img/pricing-arrow.png" alt="Shape" class="pricing-arrow position-absolute">
+        <button type="button" class="pricing_switch border-0 bg-transparent d-inline-block" (click)="toggleClass()" [class.active]="classApplied">
+            <input type="checkbox" id="js-contcheckbox">
+            <span class="pricing_slider round">
+                <span class="on">
+                    Monthly
+                </span>
+                <span class="off">
+                    Yearly
+                </span>
+            </span>
+        </button>
+    </div>
+    <div class="row justify-content-center mt-60 gx-xxl-5">
+        <div class="col-xl-4 col-md-6">
+            <div class="pricing-card style-one round-20 mb-30">
+                <h6 class="fs-14 fw-semibold">
+                    PERSONAL
+                </h6>
+                <h2 class="pricing-tag montlypricing" [class.active]="classApplied">
+                    <span class="doller-sign">$</span>15 <span class="text-para fw-normal">/ Monthly</span>
+                </h2>
+                <h2 class="pricing-tag yearlypricing" [class.active]="classApplied">
+                    <span class="doller-sign">$</span>35 <span class="text-para fw-normal">/ Yearly</span>
+                </h2>
+                <p class="text-title">
+                    Get started with our Basic Plan, perfect for job seekers looking to explore.
+                </p>
+                <ul class="pricing-features list-unstyle">
+                    <li class="text-title checked">
+                        <img src="img/icons/check-green.svg" alt="Check Icon">
+                        Access to Job Listings
+                    </li>
+                    <li class="text-title checked">
+                        <img src="img/icons/check-green.svg" alt="Check Icon">
+                        Job Alerts Email
+                    </li>
+                    <li class="text-title checked">
+                        <img src="img/icons/check-green.svg" alt="Check Icon">
+                        Easy Application Process
+                    </li>
+                    <li class="text-title checked">
+                        <img src="img/icons/check-green.svg" alt="Check Icon">
+                        Personal Profile Creation
+                    </li>
+                    <li class="text-title unchecked">
+                        <img src="img/icons/close.svg" alt="Check Icon">
+                        Enhanced Profile Visibility
+                    </li>
+                    <li class="text-title unchecked">
+                        <img src="img/icons/close.svg" alt="Check Icon">
+                        Unlimited Applications
+                    </li>
+                    <li class="text-title unchecked">
+                        <img src="img/icons/close.svg" alt="Check Icon">
+                        Ads excluded
+                    </li>
+                </ul>
+                <a routerLink="/login" class="btn style-four">
+                    Get Started Now
+                </a>
+            </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+            <div class="pricing-card style-two round-20 mb-30">
+                <h6 class="fs-14 fw-semibold">
+                    STANDARD
+                </h6>
+                <h2 class="pricing-tag montlypricing" [class.active]="classApplied">
+                    <span class="doller-sign">$</span>25 <span class="text-para fw-normal">/ Monthly</span>
+                </h2>
+                <h2 class="pricing-tag yearlypricing" [class.active]="classApplied">
+                    <span class="doller-sign">$</span>65 <span class="text-para fw-normal">/ Yearly</span>
+                </h2>
+                <p class="text-title">
+                    Get started with our Basic Plan, perfect for job seekers looking to explore.
+                </p>
+                <ul class="pricing-features list-unstyle">
+                    <li class="text-title checked">
+                        <img src="img/icons/check-green.svg" alt="Check Icon">
+                        Access to Job Listings
+                    </li>
+                    <li class="text-title checked">
+                        <img src="img/icons/check-green.svg" alt="Check Icon">
+                        Job Alerts Email
+                    </li>
+                    <li class="text-title checked">
+                        <img src="img/icons/check-green.svg" alt="Check Icon">
+                        Easy Application Process
+                    </li>
+                    <li class="text-title checked">
+                        <img src="img/icons/check-green.svg" alt="Check Icon">
+                        Personal Profile Creation
+                    </li>
+                    <li class="text-title checked">
+                        <img src="img/icons/check-green.svg" alt="Check Icon">
+                        Enhanced Profile Visibility
+                    </li>
+                    <li class="text-title unchecked">
+                        <img src="img/icons/close.svg" alt="Check Icon">
+                        Unlimited Applications
+                    </li>
+                    <li class="text-title unchecked">
+                        <img src="img/icons/close.svg" alt="Check Icon">
+                        Ads excluded
+                    </li>
+                </ul>
+                <a routerLink="/login" class="btn style-one">
+                    Get Started Now
+                </a>
+            </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+            <div class="pricing-card style-three round-20 mb-30">
+                <h6 class="fs-14 fw-semibold">
+                    PREMIUM
+                </h6>
+                <h2 class="pricing-tag montlypricing" [class.active]="classApplied">
+                    <span class="doller-sign">$</span>35 <span class="text-para fw-normal">/ Monthly</span>
+                </h2>
+                <h2 class="pricing-tag yearlypricing" [class.active]="classApplied">
+                    <span class="doller-sign">$</span>95 <span class="text-para fw-normal">/ Yearly</span>
+                </h2>
+                <p>
+                    Get started with our Basic Plan, perfect for job seekers looking to explore.
+                </p>
+                <ul class="pricing-features list-unstyle">
+                    <li class="text-title checked">
+                        <img src="img/icons/check-green.svg" alt="Check Icon">
+                        Access to Job Listings
+                    </li>
+                    <li class="text-title checked">
+                        <img src="img/icons/check-green.svg" alt="Check Icon">
+                        Job Alerts Email
+                    </li>
+                    <li class="text-title checked">
+                        <img src="img/icons/check-green.svg" alt="Check Icon">
+                        Easy Application Process
+                    </li>
+                    <li class="text-title checked">
+                        <img src="img/icons/check-green.svg" alt="Check Icon">
+                        Personal Profile Creation
+                    </li>
+                    <li class="text-title checked">
+                        <img src="img/icons/check-green.svg" alt="Check Icon">
+                        Enhanced Profile Visibility
+                    </li>
+                    <li class="text-title checked">
+                        <img src="img/icons/check-green.svg" alt="Check Icon">
+                        Unlimited Applications
+                    </li>
+                    <li class="text-title checked">
+                        <img src="img/icons/check-green.svg" alt="Check Icon">
+                        Ads excluded
+                    </li>
+                </ul>
+                <a routerLink="/login" class="btn style-two">
+                    Get Started Now
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Pricing -->
+
+<app-cta />
+
+<app-footer />
+
+<app-back-to-top />

@@ -1,0 +1,154 @@
+<div class="hero-wrap style-one position-relative index-1 overflow-hidden">
+    <img src="img/hero/hero-shape-left.png" alt="Shape" class="hero-shape-left position-absolute sm-none moveContent">
+    <img src="img/hero/hero-shape-right.png" alt="Shape" class="hero-shape-right position-absolute sm-none moveContent">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-10 offset-xl-1">
+                <div class="hero-content">
+                    <h1 class="text-center">
+                        Unlock Your Future: Find Your <strong>Perfect Job</strong> Today!
+                    </h1>
+                    <p class="fs-xxl-18 fw-medium text-center">
+                        Welcome to Abezo, where your dream job awaits! Browse  thousands of job listings.
+                    </p>
+                    <div class="hero-searchbox form-group-wrap d-flex flex-wrap align-items-center justify-content-between round-10">
+                        <div class="form-group">
+                            <label for="job_category" class="fs-14 fw-medium text-title d-block">
+                                Job Categories
+                            </label>
+                            <select name="job_category" id="job_category" class="fs-18 fw-semibold text-title">
+                                <option value="0">
+                                    Design
+                                </option>
+                                <option value="1">
+                                    Web Debelopment
+                                </option>
+                                <option value="2">
+                                    Motion Graphics
+                                </option>
+                                <option value="3">
+                                    Content Writing
+                                </option>
+                                <option value="4">
+                                    Digital Marketing
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="job_location" class="fs-14 fw-medium text-title d-block">
+                                Location
+                            </label>
+                            <select name="job_location" id="job_location" class="fs-18 fw-semibold text-title">
+                                <option value="0">
+                                    Manitoba, Canada
+                                </option>
+                                <option value="1">
+                                    New York, USA
+                                </option>
+                                <option value="2">
+                                    Florida, USA
+                                </option>
+                                <option value="3">
+                                    Torento, Canada
+                                </option>
+                                <option value="4">
+                                    London, UK
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="job_title" class="fs-14 fw-medium text-title d-block">
+                                Keywords or Titles
+                            </label>
+                            <input name="job_title" id="job_title" type="text" placeholder="UI/UX Designer" class="fs-18 fw-semibold text-title border-0 w-100 bg-transparent">
+                        </div>
+                        <div class="form-group mb-0">
+                            <button type="submit" class="btn border-0 text-white">
+                                Search Job <img src="img/icons/search-icon-2.svg" alt="Search Icon">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="popular-taglist d-flex align-items-md-center align-items-start justify-content-center">
+                        <span class="text-title fw-semibold">
+                            Popular:
+                        </span>
+                        <ul class="taglist list-unstyle">
+                            <li>
+                                <a routerLink="/jobs-left-sidebar" class="fs-14 round-4 transition">
+                                    Graphic Design
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/jobs-left-sidebar" class="fs-14 round-4 transition">
+                                    Video Editing
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/jobs-left-sidebar" class="fs-14 round-4 transition">
+                                    Web Development
+                                </a>
+                            </li>
+                            <li>
+                                <a routerLink="/jobs-left-sidebar" class="fs-14 round-4 transition">
+                                    Data Science
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid hero-shape-animation pb-70">
+        <div class="row gx-xxl-25">
+            <div class="col-lg-3 col-6">
+                <div class="img-slider">
+                    <owl-carousel-o [options]="imageSlides">
+                        <ng-template carouselSlide>
+                            <img src="img/hero/hero-shape-1.png" alt="Image" class="w-100">
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <img src="img/hero/hero-shape-2.png" alt="Image" class="w-100">
+                        </ng-template>
+                    </owl-carousel-o>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="img-slider">
+                    <owl-carousel-o [options]="imageSlides">
+                        <ng-template carouselSlide>
+                            <img src="img/hero/hero-shape-3.png" alt="Image" class="w-100">
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <img src="img/hero/hero-shape-4.png" alt="Image" class="w-100">
+                        </ng-template>
+                    </owl-carousel-o>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="img-slider">
+                    <owl-carousel-o [options]="imageSlides">
+                        <ng-template carouselSlide>
+                            <img src="img/hero/hero-shape-5.png" alt="Image" class="w-100">
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <img src="img/hero/hero-shape-6.png" alt="Image" class="w-100">
+                        </ng-template>
+                    </owl-carousel-o>
+                </div>
+            </div>
+            <div class="col-lg-3 col-6">
+                <div class="img-slider position-relative">
+                    <owl-carousel-o [options]="imageSlides">
+                        <ng-template carouselSlide>
+                            <img src="img/hero/hero-shape-7.png" alt="Image" class="w-100">
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <img src="img/hero/hero-shape-8.png" alt="Image" class="w-100">
+                        </ng-template>
+                    </owl-carousel-o>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

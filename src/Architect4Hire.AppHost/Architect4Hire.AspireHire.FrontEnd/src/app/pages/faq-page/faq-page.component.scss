@@ -1,0 +1,67 @@
+@use "../../common/faq/faq.component";
+
+.faq-tablist {
+    border: none;
+
+    .nav-item {
+        margin: {
+            right: 10px;
+            bottom: 10px;
+        };
+        &:last-child {
+            margin-right: 0;
+        }
+        .nav-link {
+            font-size: 14px;
+            color: #23333F;
+            line-height: 16px;
+            border-radius: 4px;
+            padding: 6px 8.5px;
+            border: 1px solid transparent;
+            transition: var(--transition);
+            background-color: rgba(0, 0, 0, 0.1);
+
+            &:hover, &.active {
+                background-color: var(--whiteColor);
+                border-color: #000000;
+            }
+        }
+    }
+    &.style-two {
+        .nav-item {
+            .nav-link {
+                font-size: 16px;    
+            }    
+        }    
+    }
+}
+.tab-content {
+    .tab-pane {
+        display: block;
+    }
+}
+.faq-box {
+    padding-bottom: 55px;
+    
+    &:after {
+        height: 100%;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .faq-box {
+        padding-bottom: 50px;
+    }
+
+}
+
+/* Min width 1400px */
+@media only screen and (min-width: 1400px) {
+
+    .faq-box {
+        padding-bottom: 53px;
+    }
+
+}

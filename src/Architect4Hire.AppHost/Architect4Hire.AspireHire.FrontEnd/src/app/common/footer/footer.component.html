@@ -1,0 +1,143 @@
+<footer
+    class="footer-wrap style-one position-relative bg-gray index-1 pt-100"
+    [ngClass]="{'style-two bg_dark': router.url === '/index-2' || router.url === '/index-3' || router.url === '/employers-grid'}"
+>
+    <div class="container">
+        <div class="row pb-70">
+            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-5">
+                <div class="footer-widget mb-30">
+                    <a routerLink="/" class="logo d-inline-block">
+                        <img src="img/logo.svg" alt="Logo" class="logo-light">
+                        <img src="img/logo-white.svg" alt="Logo" class="logo-dark">
+                    </a>
+                    <img src="img/footer-shape.png" alt="Logo" class="footer-shape d-block">
+                </div>
+            </div>
+            <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-sm-6 ps-xxl-55 pe-xxl-0">
+                <div class="footer-widget mb-30">
+                    <h4 class="fs-18 fw-bold text-title widget-title">
+                        Services
+                    </h4>
+                    <ul class="footer-menu list-unstyle">
+                        <li>
+                            <a routerLink="/jobs-left-sidebar">
+                                Browse Jobs
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/employers-grid">
+                                Companies
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/candidates-left-sidebar">
+                                Candidates
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/pricing-plan">
+                                Pricing
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-2 col-lg-2 col-md-3 col-sm-6 ps-xxl-65">
+                <div class="footer-widget mb-30">
+                    <h4 class="fs-18 fw-bold text-title widget-title">
+                        Company
+                    </h4>
+                    <ul class="footer-menu list-unstyle">
+                        <li>
+                            <a routerLink="/about-us">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/blog-left-sidebar">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/faq">
+                                FAQ's
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/contact-us">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xxl-2 col-xl-3 col-lg-3 col-md-5 col-sm-6 ps-xxl-0">
+                <div class="footer-widget mb-30">
+                    <h4 class="fs-18 fw-bold text-title widget-title">
+                        Support
+                    </h4>
+                    <ul class="footer-menu list-unstyle">
+                        <li>
+                            <a routerLink="/terms-conditions">
+                                Terms Of Use
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/terms-conditions">
+                                Terms & Conditions
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/privacy-policy">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/privacy-policy">
+                                Cookies Policy
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-7 col-sm-6 ps-xxl-4 pe-xxl-1">
+                <div class="footer-widget mb-30">
+                    <h4 class="fs-18 fw-bold text-title widget-title">
+                        Subscribe
+                    </h4>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Email" class="bg-white border-0 round-6">
+                        <button
+                            class="btn style-one d-block w-100"
+                            [ngClass]="{'style-two': router.url === '/index-2' || router.url === '/index-3' || router.url === '/employers-grid'}"
+                        >
+                            Subscribe Now
+                        </button>
+                    </form>
+                    <p class="fs-14 mb-0">
+                        We only send interesting and relevant emails.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="row">
+                <div class="col-md-6">
+                    <p
+                        class="copyright-text mb-0"
+                        [ngClass]="{'text-white': router.url === '/index-2' || router.url === '/index-3' || router.url === '/employers-grid'}"
+                    >
+                        © <span class="fw-bold">Abezo</span> is Proudly Owned by <a href="https://envytheme.com/" target="_blank" class="link style-one fw-bold">EnvyTheme</a>
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="social-profile text-md-end list-unstyle">
+                        <li><a target="_blank" href="https://www.facebook.com/"><i class="ri-facebook-fill"></i></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/"><i class="ri-instagram-line"></i></a></li>
+                        <li><a target="_blank" href="https://x.com/"><i class="ri-twitter-fill"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

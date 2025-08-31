@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "edge",
+      "request": "launch",
+      "name": "localhost (Edge)",
+      "url": "https://localhost:${env:DEV_SERVER_PORT}",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "npm: start"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "localhost (Chrome)",
+      "url": "https://localhost:${env:DEV_SERVER_PORT}",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "npm: start"
+    }
+  ]
+}

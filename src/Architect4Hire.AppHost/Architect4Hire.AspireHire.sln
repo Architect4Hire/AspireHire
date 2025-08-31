@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36414.22 d17.14
+VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Architect4Hire.AspireHire.AppHost", "Architect4Hire.AppHost\Architect4Hire.AspireHire.AppHost.csproj", "{8229F3EA-8C20-45BF-B0E0-634E165317A7}"
 EndProject
@@ -17,6 +17,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{B0E23B39-D272-4053-8993-35F87836410D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Architect4Hire.AspireHire.ServiceDefaults", "Architect4Hire.AspireHire.ServiceDefaults\Architect4Hire.AspireHire.ServiceDefaults.csproj", "{77D817A9-9D8A-4D2D-B796-D0F63CF71314}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Architect4Hire.AspireHire.Shared", "Architect4Hire.AspireHire.Shared\Architect4Hire.AspireHire.Shared.csproj", "{79CA38D3-20F8-4906-88D2-DC3F12EA34E5}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "Architect4Hire.AspireHire.FrontEnd", "Architect4Hire.AspireHire.FrontEnd\Architect4Hire.AspireHire.FrontEnd.esproj", "{D8FD4E91-56C9-EF59-3298-E926E0A7DCAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,12 +33,29 @@ Global
 		{8229F3EA-8C20-45BF-B0E0-634E165317A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8229F3EA-8C20-45BF-B0E0-634E165317A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8229F3EA-8C20-45BF-B0E0-634E165317A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77D817A9-9D8A-4D2D-B796-D0F63CF71314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77D817A9-9D8A-4D2D-B796-D0F63CF71314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77D817A9-9D8A-4D2D-B796-D0F63CF71314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77D817A9-9D8A-4D2D-B796-D0F63CF71314}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79CA38D3-20F8-4906-88D2-DC3F12EA34E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79CA38D3-20F8-4906-88D2-DC3F12EA34E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79CA38D3-20F8-4906-88D2-DC3F12EA34E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79CA38D3-20F8-4906-88D2-DC3F12EA34E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8FD4E91-56C9-EF59-3298-E926E0A7DCAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8FD4E91-56C9-EF59-3298-E926E0A7DCAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8FD4E91-56C9-EF59-3298-E926E0A7DCAD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D8FD4E91-56C9-EF59-3298-E926E0A7DCAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8FD4E91-56C9-EF59-3298-E926E0A7DCAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8FD4E91-56C9-EF59-3298-E926E0A7DCAD}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8229F3EA-8C20-45BF-B0E0-634E165317A7} = {B0E23B39-D272-4053-8993-35F87836410D}
+		{77D817A9-9D8A-4D2D-B796-D0F63CF71314} = {8BD38C43-8833-400B-87D4-796C8E8AE660}
+		{79CA38D3-20F8-4906-88D2-DC3F12EA34E5} = {8BD38C43-8833-400B-87D4-796C8E8AE660}
+		{D8FD4E91-56C9-EF59-3298-E926E0A7DCAD} = {677F2EEF-5142-43AE-94B2-93E2F3DC0555}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {537E1C80-4E0C-4D40-ACC8-FD779893FEA6}

@@ -1,0 +1,435 @@
+<app-top-header />
+
+<app-navbar />
+
+<app-page-banner />
+
+<!-- Blog -->
+<div class="container ptb-100">
+    <div class="row">
+        <div class="col-xl-4 order-xl-1 order-2">
+            <div class="sidebar style-one bg-aqua round-10">
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-widget-title fs-18 fw-semibold">
+                        Search
+                    </h3>
+                    <form class="searchbox-widget position-relative">
+                        <img src="img/icons/search-green.svg" alt="Search Icon" class="search-icon">
+                        <input type="search" class="bg-white w-100 round-4 text-paraThree border-0" placeholder="Company titles/keywords">
+                    </form>
+                </div>
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-widget-title fs-18 fw-semibold">
+                        Categories
+                    </h3>
+                    <select name="category-select" id="category-select" class="bg-white round-4 border-0 text-title mb-10">
+                        <option value="0">
+                            Data Science
+                        </option>
+                        <option value="1">
+                            Digital Marketing
+                        </option>
+                        <option value="2">
+                            Video Editing
+                        </option>
+                        <option value="3">
+                            Web Development
+                        </option>
+                        <option value="4">
+                            Content Marketing
+                        </option>
+                    </select>
+                    <ul class="tag-list style-two list-unstyle mt-0">
+                        <li>
+                            <a routerLink="/blog-grid">
+                                Graphic Design <img src="img/icons/close-red.svg" alt="Icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/blog-grid">
+                                Video Editiong <img src="img/icons/close-red.svg" alt="Icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/blog-grid">
+                                Web Development <img src="img/icons/close-red.svg" alt="Icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-widget-title fs-18 fw-semibold">
+                        Recent Articles
+                    </h3>
+                    <div class="popular-post-widget">
+                        <div class="pp-post-item d-flex flex-wrap align-items-center">
+                            <a routerLink="/blog-details-right-sidebar" class="pp-post-img round-10">
+                                <img src="img/blog/post-thumb-1.jpg" alt="Image" class="round-10">
+                            </a>
+                            <div class="pp-post-info">
+                                <ul class="blog-metainfo list-unstyle">
+                                    <li class="position-relative">
+                                        <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                        <a routerLink="/blog-grid">
+                                            15 Jul, 2025
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h6 class="fs-16 font-medium mb-0">
+                                    <a routerLink="/blog-details-no-sidebar">
+                                        Networking 101: Building Connections to Boost Career
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="pp-post-item d-flex flex-wrap align-items-center">
+                            <a routerLink="/blog-details-right-sidebar" class="pp-post-img round-10">
+                                <img src="img/blog/post-thumb-2.jpg" alt="Image" class="round-10">
+                            </a>
+                            <div class="pp-post-info">
+                                <ul class="blog-metainfo list-unstyle">
+                                    <li class="position-relative">
+                                        <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                        <a routerLink="/blog-grid">
+                                            18 Jul, 2025
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h6 class="fs-16 font-medium mb-0">
+                                    <a routerLink="/blog-details-no-sidebar">
+                                        Top 10 Tips for Crafting a Winning Resume
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="pp-post-item d-flex flex-wrap align-items-center">
+                            <a routerLink="/blog-details-right-sidebar" class="pp-post-img round-10">
+                                <img src="img/blog/post-thumb-3.jpg" alt="Image" class="round-10">
+                            </a>
+                            <div class="pp-post-info">
+                                <ul class="blog-metainfo list-unstyle">
+                                    <li class="position-relative">
+                                        <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                        <a routerLink="/blog-grid">
+                                            20 Jul, 2025
+                                        </a>
+                                    </li>
+                                </ul>
+                                <h6 class="fs-16 font-medium mb-0">
+                                    <a routerLink="/blog-details-no-sidebar">
+                                        How to Ace Your Next Job Interview: Expert Advice
+                                    </a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-widget-title fs-18 fw-semibold">
+                        Tags
+                    </h3>
+                    <ul class="tag-list list-unstyle">
+                        <li>
+                            <a routerLink="/blog-grid">
+                                Graphic Design
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/blog-grid">
+                                Video Editiong
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/blog-grid">
+                                Jobs
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/blog-grid">
+                                Designer
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/blog-grid">
+                                Finance
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/blog-grid">
+                                Career
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/blog-grid">
+                                Frontend
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/blog-grid">
+                                Software
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/blog-grid">
+                                SEO
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-8 order-xl-2 order-1 ps-xxl-5">
+            <div class="row align-items-center mb-10">
+                <div class="col-md-4">
+                    <p class="filter-result mb-25">
+                        Showing <strong class="text-title">1 - 8</strong> of 211 results
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <select class="filter-cat border-0 mb-25">
+                        <option value="0">
+                            Sort By(Default)
+                        </option>
+                        <option value="1">
+                            Sort By Recent
+                        </option>
+                        <option value="2">
+                            Sort By Oldest
+                        </option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <select class="filter-cat border-0 mb-25">
+                        <option value="0">
+                            08 per page
+                        </option>
+                        <option value="1">
+                            15 per page
+                        </option>
+                        <option value="2">
+                            20 per page
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="blog-card style-one mb-30">
+                        <div class="blog-img overflow-hidden round-6">
+                            <img src="img/blog/blog-2.jpg" alt="Blog Image" class="transition round-6">
+                        </div>
+                        <ul class="blog-metainfo list-unstyle">
+                            <li class="position-relative fs-14">
+                                <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                <a routerLink="/blog-grid">
+                                    21 Jul, 2025
+                                </a>
+                            </li>
+                        </ul>
+                        <h3>
+                            <a routerLink="/blog-details-left-sidebar">
+                                Networking 101: Building Connections to Boost Your Career
+                            </a>
+                        </h3>
+                        <a routerLink="/blog-details-left-sidebar" class="link style-three fs-14 fw-semibold">
+                            Read More <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="blog-card style-one mb-30">
+                        <div class="blog-img overflow-hidden round-6">
+                            <img src="img/blog/blog-3.jpg" alt="Blog Image" class="transition round-6">
+                        </div>
+                        <ul class="blog-metainfo list-unstyle">
+                            <li class="position-relative fs-14">
+                                <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                <a routerLink="/blog-grid">
+                                    20 Jul, 2025
+                                </a>
+                            </li>
+                        </ul>
+                        <h3>
+                            <a routerLink="/blog-details-left-sidebar">
+                                From Application to Offer: Navigating the Hiring Process
+                            </a>
+                        </h3>
+                        <a routerLink="/blog-details-left-sidebar" class="link style-three fs-14 fw-semibold">
+                            Read More <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="blog-card style-one mb-30">
+                        <div class="blog-img overflow-hidden">
+                            <img src="img/blog/blog-4.jpg" alt="Blog Image">
+                        </div>
+                        <ul class="blog-metainfo list-unstyle">
+                            <li class="position-relative fs-14">
+                                <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                <a routerLink="/blog-grid">
+                                    16 Jul, 2025
+                                </a>
+                            </li>
+                        </ul>
+                        <h3>
+                            <a routerLink="/blog-details-left-sidebar">
+                                Success Stories: How These Job Seekers Landed Their Dream Jobs
+                            </a>
+                        </h3>
+                        <a routerLink="/blog-details-left-sidebar" class="link style-three fs-14 fw-semibold">
+                            Read More <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="blog-card style-one mb-30">
+                        <div class="blog-img overflow-hidden round-6">
+                            <img src="img/blog/blog-5.jpg" alt="Blog Image" class="transition round-6">
+                        </div>
+                        <ul class="blog-metainfo list-unstyle">
+                            <li class="position-relative fs-14">
+                                <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                <a routerLink="/blog-grid">
+                                    15 Jul, 2025
+                                </a>
+                            </li>
+                        </ul>
+                        <h3>
+                            <a routerLink="/blog-details-left-sidebar">
+                                The Ultimate Guide to Crafting a Resume That Stands Out to Employers
+                            </a>
+                        </h3>
+                        <a routerLink="/blog-details-left-sidebar" class="link style-three fs-14 fw-semibold">
+                            Read More <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="blog-card style-one mb-30">
+                        <div class="blog-img overflow-hidden round-6">
+                            <img src="img/blog/blog-6.jpg" alt="Blog Image" class="transition round-6">
+                        </div>
+                        <ul class="blog-metainfo list-unstyle">
+                            <li class="position-relative fs-14">
+                                <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                <a routerLink="/blog-grid">
+                                    14 Jul, 2025
+                                </a>
+                            </li>
+                        </ul>
+                        <h3>
+                            <a routerLink="/blog-details-left-sidebar">
+                                10 Proven Strategies for Acing Your Next Job Interview with Confidence
+                            </a>
+                        </h3>
+                        <a routerLink="/blog-details-left-sidebar" class="link style-three fs-14 fw-semibold">
+                            Read More <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="blog-card style-one mb-30">
+                        <div class="blog-img overflow-hidden round-6">
+                            <img src="img/blog/blog-7.jpg" alt="Blog Image" class="transition round-6">
+                        </div>
+                        <ul class="blog-metainfo list-unstyle">
+                            <li class="position-relative fs-14">
+                                <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                <a routerLink="/blog-grid">
+                                    12 Jul, 2025
+                                </a>
+                            </li>
+                        </ul>
+                        <h3>
+                            <a routerLink="/blog-details-left-sidebar">
+                                Exploring the Future of Remote Work: Trends, Challenges, and Opportunities
+                            </a>
+                        </h3>
+                        <a routerLink="/blog-details-left-sidebar" class="link style-three fs-14 fw-semibold">
+                            Read More <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="blog-card style-one mb-30">
+                        <div class="blog-img overflow-hidden">
+                            <img src="img/blog/blog-8.jpg" alt="Blog Image">
+                        </div>
+                        <ul class="blog-metainfo list-unstyle">
+                            <li class="position-relative fs-14">
+                                <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                <a routerLink="/blog-grid">
+                                    15 Jul, 2025
+                                </a>
+                            </li>
+                        </ul>
+                        <h3>
+                            <a routerLink="/blog-details-left-sidebar">
+                                Full Stack Developer with Machine Learning
+                            </a>
+                        </h3>
+                        <a routerLink="/blog-details-left-sidebar" class="link style-three fs-14 fw-semibold">
+                            Read More <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="blog-card style-one mb-30">
+                        <div class="blog-img overflow-hidden round-6">
+                            <img src="img/blog/blog-1.jpg" alt="Blog Image" class="transition round-6">
+                        </div>
+                        <ul class="blog-metainfo list-unstyle">
+                            <li class="position-relative fs-14">
+                                <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                                <a routerLink="/blog-grid">
+                                    22 Jul, 2025
+                                </a>
+                            </li>
+                        </ul>
+                        <h3>
+                            <a routerLink="/blog-details-left-sidebar">
+                                Print, Publishing Qui Visual Layout Mockups
+                            </a>
+                        </h3>
+                        <a routerLink="/blog-details-left-sidebar" class="link style-three fs-14 fw-semibold">
+                            Read More <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <ul class="page-nav d-flex align-items-center justify-content-center list-unstyle mt-1">
+                <li>
+                    <a routerLink="." class="d-flex flex-column align-items-center justify-content-center rounded-circle fw-semibold text-title">
+                        <i class="ri-arrow-left-line"></i>
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="." class="d-flex flex-column align-items-center justify-content-center rounded-circle fw-semibold">
+                        1
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="." class="active d-flex flex-column align-items-center justify-content-center rounded-circle fw-semibold text-title">
+                        2
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="." class="d-flex flex-column align-items-center justify-content-center rounded-circle fw-semibold text-title">
+                        3
+                    </a>
+                </li>
+                <li>
+                    <a routerLink="." class="d-flex flex-column align-items-center justify-content-center rounded-circle fw-semibold text-title">
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- End Blog -->
+
+<app-footer />
+
+<app-back-to-top />

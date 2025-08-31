@@ -1,0 +1,313 @@
+<!-- Default -->
+<div
+    class="container position-relative index-1 pb-70"
+    [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/index-3'}"
+>
+    <img src="img/section-shape-1.png" alt="Blog Image" class="blog-section-shape position-absolute animationFramesTwo">
+    <div class="row align-items-center mb-35">
+        <div class="col-md-8">
+            <div class="section-title style-one mb-sm-10">
+                <h2 class="mb-10 fw-medium">
+                    Abezo <strong>Insights</strong>
+                </h2>
+                <p class="text-ash mb-0">
+                    Read and gain knowledge from the expert.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 text-md-end">
+            <a routerLink="/blog-left-sidebar" class="link style-two fs-14 fw-semibold">
+                Browse All Articles <i class="ri-arrow-right-line"></i>
+            </a>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="blog-card style-one mb-30">
+                <div class="blog-img overflow-hidden round-6">
+                    <img src="img/blog/blog-1.jpg" alt="Blog Image" class="transition round-6">
+                </div>
+                <ul class="blog-metainfo list-unstyle">
+                    <li class="position-relative fs-14">
+                        <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                        <a routerLink="/blog-grid">
+                            22 Jul, 2025
+                        </a>
+                    </li>
+                </ul>
+                <h3>
+                    <a routerLink="/blog-details-left-sidebar">
+                        Print, publishing qui visual layout mockups.
+                    </a>
+                </h3>
+                <a routerLink="/blog-details-left-sidebar" class="link style-three fs-14 fw-semibold">
+                    Read More <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="blog-card style-one mb-30">
+                <div class="blog-img overflow-hidden round-6">
+                    <img src="img/blog/blog-2.jpg" alt="Blog Image" class="transition round-6">
+                </div>
+                <ul class="blog-metainfo list-unstyle">
+                    <li class="position-relative fs-14">
+                        <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                        <a routerLink="/blog-grid">
+                            21 Jul, 2025
+                        </a>
+                    </li>
+                </ul>
+                <h3>
+                    <a routerLink="/blog-details-left-sidebar">
+                        Make more productive work flow in few steps
+                    </a>
+                </h3>
+                <a routerLink="/blog-details-left-sidebar" class="link style-three fs-14 fw-semibold">
+                    Read More <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="blog-card style-one mb-30">
+                <div class="blog-img overflow-hidden round-6">
+                    <img src="img/blog/blog-3.jpg" alt="Blog Image" class="transition round-6">
+                </div>
+                <ul class="blog-metainfo list-unstyle">
+                    <li class="position-relative fs-14">
+                        <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                        <a routerLink="/blog-grid">
+                            20 Jul, 2025
+                        </a>
+                    </li>
+                </ul>
+                <h3>
+                    <a routerLink="/blog-details-left-sidebar">
+                        Designer’s checklist for every UX/UI project
+                    </a>
+                </h3>
+                <a routerLink="/blog-details-left-sidebar" class="link style-three fs-14 fw-semibold">
+                    Read More <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="blog-card style-one mb-30">
+                <div class="blog-img overflow-hidden">
+                    <img src="img/blog/blog-4.jpg" alt="Blog Image">
+                </div>
+                <ul class="blog-metainfo list-unstyle">
+                    <li class="position-relative fs-14">
+                        <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                        <a routerLink="/blog-grid">
+                            15 Jul, 2025
+                        </a>
+                    </li>
+                </ul>
+                <h3>
+                    <a routerLink="/blog-details-left-sidebar">
+                        Full Stack Developer with Machine Learning
+                    </a>
+                </h3>
+                <a routerLink="/blog-details-left-sidebar" class="link style-three fs-14 fw-semibold">
+                    Read More <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Only for Home Demo - 2 -->
+<div
+    class="container position-relative index-1 pb-70"
+    *ngIf="router.url === '/index-2'"
+>
+    <img src="img/section-shape-1.png" alt="Section Shape" class="blog-section-shape position-absolute animationFramesTwo">
+    <div class="row align-items-center mb-40">
+        <div class="col-md-8">
+            <div class="section-title style-two mb-sm-20">
+                <h2 class="mb-10">
+                    Abezo <strong>Insights</strong>
+                </h2>
+                <p class="text-ash mb-0">
+                    Read and gain knowledge from the expert.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 text-md-end">
+            <a routerLink="/blog-left-sidebar" class="btn style-five fs-14 fw-semibold">
+                Browse All Articles <img src="img/icons/right-arrow-green.svg" alt="Image">
+            </a>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-xl-4 col-md-6">
+            <div class="blog-card style-two mb-30">
+                <div class="blog-img overflow-hidden round-6">
+                    <img src="img/blog/blog-2.jpg" alt="Blog Image" class="transition round-6">
+                </div>
+                <ul class="blog-metainfo list-unstyle">
+                    <li class="position-relative fs-14">
+                        <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                        <a routerLink="/blog-grid">21 Jul, 2025</a>
+                    </li>
+                </ul>
+                <h3><a routerLink="/blog-details-left-sidebar">
+                    Networking 101: Building Connections to Boost Your Career
+                </a></h3>
+                <a routerLink="/blog-details-left-sidebar" class="link style-three fs-14 fw-semibold">
+                    Read More <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+            <div class="blog-card style-two mb-30">
+                <div class="blog-img overflow-hidden round-6">
+                    <img src="img/blog/blog-3.jpg" alt="Blog Image" class="transition round-6">
+                </div>
+                <ul class="blog-metainfo list-unstyle">
+                    <li class="position-relative fs-14">
+                        <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                        <a routerLink="/blog-grid">20 Jul, 2025</a>
+                    </li>
+                </ul>
+                <h3><a routerLink="/blog-details-left-sidebar">
+                    From Application to Offer: Navigating the Hiring Process
+                </a></h3>
+                <a routerLink="/blog-details-left-sidebar" class="link style-three fs-14 fw-semibold">
+                    Read More <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-xl-4 col-md-6">
+            <div class="blog-card style-two mb-30">
+                <div class="blog-img overflow-hidden round-6">
+                    <img src="img/blog/blog-4.jpg" alt="Blog Image">
+                </div>
+                <ul class="blog-metainfo list-unstyle">
+                    <li class="position-relative fs-14">
+                        <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                        <a routerLink="/blog-grid">15 Jul, 2025</a>
+                    </li>
+                </ul>
+                <h3><a routerLink="/blog-details-left-sidebar">
+                    Success Stories: How These Job Seekers Landed Their Dream Jobs
+                </a></h3>
+                <a routerLink="/blog-details-left-sidebar" class="link style-three fs-14 fw-semibold">
+                    Read More <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Only for Home Demo - 3 -->
+<div
+    class="container position-relative index-1 pb-70"
+    *ngIf="router.url === '/index-3'"
+>
+    <img src="img/section-shape-1.png" alt="Blog Image" class="blog-section-shape position-absolute animationFramesTwo">
+    <div class="row align-items-center mb-35">
+        <div class="col-md-8">
+            <div class="section-title style-three mb-sm-10">
+                <h2 class="mb-10">
+                    Abezo <strong>Insights</strong>
+                </h2>
+                <p class="text-ash mb-0">
+                    Read and gain knowledge from the expert.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 text-md-end">
+            <a routerLink="/blog-left-sidebar" class="link style-two fs-14 fw-semibold">
+                Browse All Articles <i class="ri-arrow-right-line"></i>
+            </a>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="blog-card style-one mb-30">
+                <div class="blog-img overflow-hidden round-6">
+                    <img src="img/blog/blog-1.jpg" alt="Blog Image" class="transition round-6">
+                </div>
+                <ul class="blog-metainfo list-unstyle">
+                    <li class="position-relative fs-14">
+                        <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                        <a routerLink="/blog-grid">
+                            22 Jul, 2025
+                        </a>
+                    </li>
+                </ul>
+                <h3><a routerLink="/blog-details-left-sidebar">
+                    Print, publishing qui visual layout mockups.
+                </a></h3>
+                <a routerLink="/blog-details-left-sidebar" class="link style-three fs-14 fw-semibold">
+                    Read More <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="blog-card style-one mb-30">
+                <div class="blog-img overflow-hidden round-6">
+                    <img src="img/blog/blog-2.jpg" alt="Blog Image" class="transition round-6">
+                </div>
+                <ul class="blog-metainfo list-unstyle">
+                    <li class="position-relative fs-14">
+                        <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                        <a routerLink="/blog-grid">
+                            21 Jul, 2025
+                        </a>
+                    </li>
+                </ul>
+                <h3><a routerLink="/blog-details-left-sidebar">
+                    Make more productive work flow in few steps
+                </a></h3>
+                <a routerLink="/blog-details-left-sidebar" class="link style-three fs-14 fw-semibold">
+                    Read More <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="blog-card style-one mb-30">
+                <div class="blog-img overflow-hidden round-6">
+                    <img src="img/blog/blog-3.jpg" alt="Blog Image" class="transition round-6">
+                </div>
+                <ul class="blog-metainfo list-unstyle">
+                    <li class="position-relative fs-14">
+                        <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                        <a routerLink="/blog-grid">
+                            20 Jul, 2025
+                        </a>
+                    </li>
+                </ul>
+                <h3><a routerLink="/blog-details-left-sidebar">
+                    Designer’s checklist for every UX/UI project
+                </a></h3>
+                <a routerLink="/blog-details-left-sidebar" class="link style-three fs-14 fw-semibold">
+                    Read More <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-xl-4 col-md-6">
+            <div class="blog-card style-one mb-30">
+                <div class="blog-img overflow-hidden">
+                    <img src="img/blog/blog-4.jpg" alt="Blog Image">
+                </div>
+                <ul class="blog-metainfo list-unstyle">
+                    <li class="position-relative fs-14">
+                        <img src="img/icons/calendar.svg" alt="Calendar Icon">
+                        <a routerLink="/blog-grid">
+                            15 Jul, 2025
+                        </a>
+                    </li>
+                </ul>
+                <h3><a routerLink="/blog-details-left-sidebar">
+                    Full Stack Developer with Machine Learning
+                </a></h3>
+                <a routerLink="/blog-details-left-sidebar" class="link style-three fs-14 fw-semibold">
+                    Read More <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,854 @@
+<!-- Navbar -->
+<div
+    class="navbar-area style-one position-relative"
+    [ngClass]="{'sticky': isSticky, 'style-two': router.url === '/index-2' || router.url === '/index-3'}"
+>
+    <nav class="navbar navbar-expand-lg bg_dark d-flex justify-content-between align-items-center">
+        <div class="container">
+            <a routerLink="/" class="navbar-brand">
+                <img src="img/logo-white.svg" alt="Logo">
+            </a>
+            <ul
+                class="category-menu list-unstyle d-none d-xl-block"
+                *ngIf="router.url === '/index-2'"
+            >
+                <li>
+                    <a href="javascript:void(0)" class="category-menu-title fw-medium">
+                        <span class="d-none d-xxl-inline">
+                            Categories
+                        </span>
+                        <img src="img/icons/category.svg" alt="Icon">
+                    </a>
+                    <ul class="list-unstyle position-absolute bg-white transition">
+                        <li>
+                            <a routerLink="/jobs-grid">
+                                <i class="ri-arrow-right-line"></i>
+                                Web Development
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/jobs-grid">
+                                <i class="ri-arrow-right-line"></i>
+                                Digital Marketing
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/jobs-grid">
+                                <i class="ri-arrow-right-line"></i>
+                                Graphics Design
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/jobs-grid">
+                                <i class="ri-arrow-right-line"></i>
+                                Data Science
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/jobs-grid">
+                                <i class="ri-arrow-right-line"></i>
+                                SEO & SEM
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/jobs-grid">
+                                <i class="ri-arrow-right-line"></i>
+                                Health & Fitness
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/jobs-grid">
+                                <i class="ri-arrow-right-line"></i>
+                                Business
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/jobs-grid">
+                                <i class="ri-arrow-right-line"></i>
+                                Art & Photography
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/jobs-grid">
+                                <i class="ri-arrow-right-line"></i>
+                                Cooking
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="other-options d-flex align-items-center justify-content-end d-lg-none">
+                <div
+                    class="option-item"
+                    [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/index-3'}"
+                >
+                    <div class="notif-option position-relative">
+                        <button
+                            class="dropdown-toggle d-flex align-items-center position-relative bg-transparent border-0 transition"
+                            type="button"
+                            (click)="notificationsDropdownToggleClass()"
+                        >
+                            <img src="img/icons/bell-white.svg" alt="Bell Icon" class="notif-btn">
+                            <span class="d-flex flex-column align-items-center justify-content-center rounded-circle text-white position-absolute">
+                                1
+                            </span>
+                        </button>
+                        <div
+                            class="dropdown-menu top-1 border-0"
+                            [class.active]="notificationsDropdownClassApplied"
+                        >
+                            <h3 class="fs-20 fw-semibold mb-15">
+                                Notifications
+                            </h3>
+                            <ul class="list-unstyle">
+                                <li class="position-relative unread">
+                                    <p class="fs-15 fw-semibold font_secondary text-title">
+                                        You have <span>3</span> new messages
+                                    </p>
+                                    <span class="fs-14 text-paraTwo d-block">
+                                        2 hours ago
+                                    </span>
+                                </li>
+                                <li class="position-relative read">
+                                    <p class="fs-15 fw-semibold font_secondary text-title">
+                                        You have <span>4</span> new messages
+                                    </p>
+                                    <span class="fs-14 text-paraTwo d-block">
+                                        3 hours ago
+                                    </span>
+                                </li>
+                                <li class="position-relative read">
+                                    <p class="fs-15 fw-semibold font_secondary text-title">
+                                        You have <span>3</span> new messages
+                                    </p>
+                                    <span class="fs-14 text-paraTwo d-block">
+                                        1 day ago
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="option-item">
+                    <button
+                        class="navbar-toggler"
+                        (click)="toggleClass()"
+                        type="button"
+                    >
+                        <span class="burger-menu">
+                            <span class="top-bar"></span>
+                            <span class="middle-bar"></span>
+                            <span class="bottom-bar"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul
+                    class="navbar-nav"
+                    [ngClass]="{'ms-auto': router.url === '/index-2'}"
+                >
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu list-unstyle">
+                            <li class="nav-item">
+                                <a routerLink="/" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home Demo - 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/index-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home Demo - 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/index-3" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home Demo - 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                            Find Jobs
+                        </a>
+                        <ul class="dropdown-menu list-unstyle">
+                            <li class="nav-item">
+                                <a routerLink="/jobs-left-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Jobs Left Sidebar
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/jobs-right-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Jobs Right Sidebar
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/jobs-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Jobs Grid
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/jobs-list" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Jobs List
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/jobs-columns" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Jobs Columns
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/jobs-top-map" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Jobs Top Map
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/jobs-sidebar-map" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Jobs Sidebar Map
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/job-details-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Job Details Left Sidebar
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/job-details-sidebar-two" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Job Details Right Sidebar
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/job-details-without-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Job Details No Sidebar
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                            Employers
+                        </a>
+                        <ul class="dropdown-menu list-unstyle">
+                            <li class="nav-item">
+                                <a routerLink="/employers-left-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Employers Left Sidebar
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/employers-right-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Employers Right Sidebar
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/employers-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Employers Grid
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/employers-list" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Employers List
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/employers-sidebar-map" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Employers Sidebar Map
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/employer-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Employer Details
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/employers-dashboard" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Employers Dashboard
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                            Candidates
+                        </a>
+                        <ul class="dropdown-menu list-unstyle">
+                            <li class="nav-item">
+                                <a routerLink="/candidates-left-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Candidates Left Sidebar
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/candidates-right-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Candidates Right Sidebar
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/candidates-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Candidates Grid
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/candidates-sidebar-map" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Candidates Sidebar Map
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/candidate-details" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Candidate Details
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/candidates-dashboard" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Candidates Dashboard
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                            <span>Blog</span>
+                        </a>
+                        <ul class="dropdown-menu list-unstyle">
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                    Blog Layout
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a routerLink="/blog-left-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                            Blog Left Sidebar
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a routerLink="/blog-right-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                            Blog Right Sidebar
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a routerLink="/blog-grid" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                            Blog Grid
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                                    Blog Details Layout
+                                </a>
+                                <ul class="dropdown-menu list-unstyle">
+                                    <li class="nav-item">
+                                        <a routerLink="/blog-details-left-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                            Blog Details Left Sidebar
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a routerLink="/blog-details-right-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                            Blog Details Right Sidebar
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a routerLink="/blog-details-no-sidebar" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                            Blog Details No Sidebar
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu list-unstyle">
+                            <li class="nav-item">
+                                <a routerLink="/about-us" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/pricing-plan" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Pricing Plan
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/faq" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/contact-us" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/login" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Login
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/register" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Register
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/privacy-policy" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/terms-conditions" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Terms & Conditions
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/error-404" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    404 Error Page
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div
+                    class="other-options d-flex align-items-center justify-content-end"
+                    [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/index-3'}"
+                >
+                    <div class="notif-option position-relative">
+                        <button
+                            class="dropdown-toggle d-flex align-items-center position-relative bg-transparent border-0 transition"
+                            type="button"
+                            (click)="notificationsDropdownToggleClass()"
+                        >
+                            <img src="img/icons/bell-white.svg" alt="Bell Icon" class="notif-btn">
+                            <span class="d-flex flex-column align-items-center justify-content-center rounded-circle text-white position-absolute">
+                                1
+                            </span>
+                        </button>
+                        <div
+                            class="dropdown-menu top-1 border-0"
+                            [class.active]="notificationsDropdownClassApplied"
+                        >
+                            <h3 class="fs-20 fw-semibold mb-15">
+                                Notifications
+                            </h3>
+                            <ul class="list-unstyle">
+                                <li class="position-relative unread">
+                                    <p class="fs-15 fw-semibold font_secondary text-title">
+                                        You have <span>3</span> new messages
+                                    </p>
+                                    <span class="fs-14 text-paraTwo d-block">
+                                        2 hours ago
+                                    </span>
+                                </li>
+                                <li class="position-relative read">
+                                    <p class="fs-15 fw-semibold font_secondary text-title">
+                                        You have <span>4</span> new messages
+                                    </p>
+                                    <span class="fs-14 text-paraTwo d-block">
+                                        3 hours ago
+                                    </span>
+                                </li>
+                                <li class="position-relative read">
+                                    <p class="fs-15 fw-semibold font_secondary text-title">
+                                        You have <span>3</span> new messages
+                                    </p>
+                                    <span class="fs-14 text-paraTwo d-block">
+                                        1 day ago
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a routerLink="/login" class="link style-four fw-medium">
+                        Login
+                    </a>
+                    <a routerLink="/register" class="btn style-four">
+                        Register Now
+                    </a>
+                </div>
+                <div
+                    class="other-options d-flex align-items-center justify-content-end"
+                    *ngIf="router.url === '/index-2' || router.url === '/index-3'"
+                >
+                    <a routerLink="/login" class="link style-three fw-medium ms-0">
+                        Login/Register
+                    </a>
+                    <a routerLink="/db-post-job" class="btn style-four">
+                        Post A Job
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!-- Responsive Navbar -->
+<div class="responsive-navbar offcanvas offcanvas-end border-0 transition" [class.show]="classApplied">
+    <div class="offcanvas-header">
+        <a routerLink="/" class="logo d-inline-block">
+            <img src="img/logo-white.svg" alt="Logo" class="logo">
+        </a>
+        <button
+            type="button"
+            (click)="toggleClass()"
+            class="close-btn bg-transparent transition position-relative lh-1 p-0 border-0"
+        >
+            <i class="ri-close-line"></i>
+        </button>
+    </div>
+    <div class="offcanvas-body">
+        <div class="accordion">
+            <div class="accordion-item rounded-0 border-0">
+                <button
+                    type="button"
+                    (click)="toggleSection(0)"
+                    [ngClass]="{ 'open': isSectionOpen(0) }"
+                    class="accordion-button d-block text-start shadow-none fw-semibold border-0 transition border-radius"
+                >
+                    Home
+                </button>
+                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(0) }">
+                    <div class="accordion-body">
+                        <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                            <li class="sidemenu-item">
+                                <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Home Demo - 1
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/index-2" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Home Demo - 2
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/index-3" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Home Demo - 3
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item rounded-0 border-0">
+                <button
+                    type="button"
+                    (click)="toggleSection(1)"
+                    [ngClass]="{ 'open': isSectionOpen(1) }"
+                    class="accordion-button d-block text-start shadow-none fw-semibold border-0 transition border-radius"
+                >
+                    Find Jobs
+                </button>
+                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(1) }">
+                    <div class="accordion-body">
+                        <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                            <li class="sidemenu-item">
+                                <a routerLink="/jobs-left-sidebar" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Jobs Left Sidebar
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/jobs-right-sidebar" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Jobs Right Sidebar
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/jobs-grid" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Jobs Grid
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/jobs-list" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Jobs List
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/jobs-columns" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Jobs Columns
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/jobs-top-map" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Jobs Top Map
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/jobs-sidebar-map" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Jobs Sidebar Map
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/job-details-sidebar" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Job Details Left Sidebar
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/job-details-sidebar-two" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Job Details Right Sidebar
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/job-details-without-sidebar" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Job Details No Sidebar
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item rounded-0 border-0">
+                <button
+                    type="button"
+                    (click)="toggleSection(2)"
+                    [ngClass]="{ 'open': isSectionOpen(2) }"
+                    class="accordion-button d-block text-start shadow-none fw-semibold border-0 transition border-radius"
+                >
+                    Employers
+                </button>
+                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(2) }">
+                    <div class="accordion-body">
+                        <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                            <li class="sidemenu-item">
+                                <a routerLink="/employers-left-sidebar" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Employers Left Sidebar
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/employers-right-sidebar" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Employers Right Sidebar
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/employers-grid" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Employers Grid
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/employers-list" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Employers List
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/employers-sidebar-map" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Employers Sidebar Map
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/employer-sidebar" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Employer Details
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/employers-dashboard" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Employers Dashboard
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item rounded-0 border-0">
+                <button
+                    type="button"
+                    (click)="toggleSection(3)"
+                    [ngClass]="{ 'open': isSectionOpen(3) }"
+                    class="accordion-button d-block text-start shadow-none fw-semibold border-0 transition border-radius"
+                >
+                    Candidates
+                </button>
+                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(3) }">
+                    <div class="accordion-body">
+                        <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                            <li class="sidemenu-item">
+                                <a routerLink="/candidates-left-sidebar" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Candidates Left Sidebar
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/candidates-right-sidebar" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Candidates Right Sidebar
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/candidates-grid" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Candidates Grid
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/candidates-sidebar-map" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Candidates Sidebar Map
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/candidate-details" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Candidate Details
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/candidates-dashboard" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Candidates Dashboard
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item rounded-0 border-0">
+                <button
+                    type="button"
+                    (click)="toggleSection(4)"
+                    [ngClass]="{ 'open': isSectionOpen(4) }"
+                    class="accordion-button d-block text-start shadow-none fw-semibold border-0 transition border-radius"
+                >
+                    Blog
+                </button>
+                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(4) }">
+                    <div class="accordion-body">
+                        <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                            <li class="sidemenu-item">
+                                <button
+                                    type="button"
+                                    (click)="toggleSection2(0)"
+                                    [ngClass]="{ 'open': isSectionOpen2(0) }"
+                                    class="accordion-button d-block text-start shadow-none fw-semibold border-0 transition border-radius"
+                                >
+                                    Blog Layout
+                                </button>
+                                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen2(0) }">
+                                    <div class="accordion-body">
+                                        <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                            <li class="sidemenu-item">
+                                                <a routerLink="/blog-left-sidebar" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                                    Blog Left Sidebar
+                                                </a>
+                                            </li>
+                                            <li class="sidemenu-item">
+                                                <a routerLink="/blog-right-sidebar" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                                    Blog Right Sidebar
+                                                </a>
+                                            </li>
+                                            <li class="sidemenu-item">
+                                                <a routerLink="/blog-grid" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                                    Blog Grid
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="sidemenu-item">
+                                <button
+                                    type="button"
+                                    (click)="toggleSection2(1)"
+                                    [ngClass]="{ 'open': isSectionOpen2(1) }"
+                                    class="accordion-button d-block text-start shadow-none fw-semibold border-0 transition border-radius"
+                                >
+                                    Blog Details Layout
+                                </button>
+                                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen2(1) }">
+                                    <div class="accordion-body">
+                                        <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                                            <li class="sidemenu-item">
+                                                <a routerLink="/blog-details-left-sidebar" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                                    Blog Details Left Sidebar
+                                                </a>
+                                            </li>
+                                            <li class="sidemenu-item">
+                                                <a routerLink="/blog-details-right-sidebar" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                                    Blog Details Right Sidebar
+                                                </a>
+                                            </li>
+                                            <li class="sidemenu-item">
+                                                <a routerLink="/blog-details-no-sidebar" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                                    Blog Details No Sidebar
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item rounded-0 border-0">
+                <button
+                    type="button"
+                    (click)="toggleSection(5)"
+                    [ngClass]="{ 'open': isSectionOpen(5) }"
+                    class="accordion-button d-block text-start shadow-none fw-semibold border-0 transition border-radius"
+                >
+                    Pages
+                </button>
+                <div class="accordion-collapse" [ngClass]="{ 'open': isSectionOpen(5) }">
+                    <div class="accordion-body">
+                        <ul class="sidebar-sub-menu p-0 list-unstyled mb-0">
+                            <li class="sidemenu-item">
+                                <a routerLink="/about-us" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/pricing-plan" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Pricing Plan
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/faq" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/contact-us" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/login" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Login
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/register" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Register
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/privacy-policy" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/terms-conditions" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    Terms & Conditions
+                                </a>
+                            </li>
+                            <li class="sidemenu-item">
+                                <a routerLink="/error-404" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link border-radius d-block position-relative transition fw-semibold">
+                                    404 Error Page
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="other-options d-flex align-items-center"
+            [ngClass]="{'d-none': router.url === '/index-2' || router.url === '/index-3'}"
+        >
+            <a routerLink="/login" class="link style-four fw-medium">
+                Login
+            </a>
+            <a routerLink="/register" class="btn style-four">
+                Register Now
+            </a>
+        </div>
+        <div
+            class="other-options d-flex align-items-center"
+            *ngIf="router.url === '/index-2' || router.url === '/index-3'"
+        >
+            <a routerLink="/login" class="link style-three fw-medium ms-0">
+                Login/Register
+            </a>
+            <a routerLink="/db-post-job" class="btn style-four">
+                Post A Job
+            </a>
+        </div>
+    </div>
+</div>
+<div class="offcanvas-backdrop fade" [class.show]="classApplied"></div>

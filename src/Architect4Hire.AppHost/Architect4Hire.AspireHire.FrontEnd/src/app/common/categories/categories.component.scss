@@ -1,0 +1,103 @@
+.category-slider-two {
+    .category-card {
+        &.style-three {
+            direction: ltr;
+        }
+    }
+}
+.category-card {
+    &.style-one {
+        border: 1.5px dashed var(--borderColor);
+        padding: 30px 20px 25px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+
+        &::after {
+            top: 0;
+            left: 0%;
+            height: 0%;
+            opacity: 0;
+            z-index: -1;
+            content: "";
+            width: 100%;
+            position: absolute;
+            transition: var(--transition);
+            background-color: var(--primaryColor);
+        }
+        .cat-icon {
+            width: 66px;
+            height: 66px;
+            margin: 0 auto 41px;
+            background-color: rgba(116, 177, 190, 0.2);
+        }
+        h3 {
+            font-size: 20px;
+            line-height: 23px;
+            margin-bottom: 4px;
+        }
+        &:hover {
+            &::after {
+                height: 100%;
+                opacity: 1;
+            }
+            .cat-icon {
+                background-color: var(--whiteColor);
+            }
+            h3 {
+                color: var(--whiteColor);
+            }
+            span {
+                color: rgba(255,255,255,0.8);
+            }
+        }
+    }
+    &.style-two {
+        border: 1px dashed var(--borderColor);
+        padding: 30px 35px;
+
+        .cat-icon {
+            width: 46px;
+        }
+        .cat-info {
+            margin-left: auto;
+            width: calc(100% - 76px);
+
+            h3 {
+                font-size: 20px;
+                line-height: 24px;
+                margin-bottom: 4px;
+            }
+        }
+        &:hover {
+            box-shadow: 0 2px 24px rgba(14, 72, 43, 0.1);
+        }
+    }
+    &.style-three {
+        background-color: #E8F6E9;
+        border-radius: 50px;
+        padding: 10px;
+
+        &:hover {
+            background-color:#D2F5D4;
+        }
+        .cat-icon {
+            width: 50px;
+            height: 50px;
+
+            img {
+                max-width: 24px;
+            }
+        }
+        h3 {
+            margin: 0 15px 0 16px;
+            font: {
+                family: var(--sharpRegularFont);
+                weight: 700;
+            };
+        }
+        span {
+            top: 3px;
+        }
+    }
+}

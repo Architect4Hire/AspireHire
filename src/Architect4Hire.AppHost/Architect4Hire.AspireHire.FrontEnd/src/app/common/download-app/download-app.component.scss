@@ -1,0 +1,226 @@
+.app-box {
+    background: {
+        image: url(../../../../public/img/app/app-bg.png);
+        position: top left;
+        repeat: no-repeat;
+        size: cover;
+    };
+    padding: {
+        left: 40px;
+        right: 35px
+    };
+    .app-shape-one {
+        position: relative;
+        margin-top: 114px;
+        left: 60px;
+    }
+    .app-shape-two {
+        top: 94px;
+        right: 8%;
+    }
+    .app-img-wrap {
+        left: -35px;
+
+        .app-bg-shape {
+            top: 50%;
+            left: 50%;
+            z-index: -1;
+            min-width: 520px;
+            transform: translate(-50%,-50%);
+        }
+        .app-img {
+            top: 8px;
+
+            .app-img-one {
+                filter: drop-shadow(0 4px 25px rgba(5, 44, 24, 0.25));
+                top: 144px;
+            }
+        }
+    }
+    .app-btn-wrap {
+        p {
+            margin-bottom: 25px;
+        }
+        a {
+            &:last-child {
+                margin-top: 10px;
+            }
+        }
+        .btn {
+            padding: 12.5px 57px 12.5px 30px;
+
+            img {
+                transition: var(--transition);
+            }
+            &.apple-btn {
+                &:before {
+                    background-color: #1C2E3D;
+                }    
+                &:after {
+                    background-color: var(--secondaryColor);
+                }
+            }
+            &.google-play {
+                &:before {
+                    background-color: var(--whiteColor);
+                }    
+                &:after {
+                    background-color: var(--secondaryColor);
+                }
+                &:hover {
+                    img {
+                        filter: brightness(0) invert(1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .app-box {
+        padding: {
+            left: 20px;
+            right: 20px;
+            bottom: 60px;
+        };
+        .app-text {
+            .app-shape-one {
+                margin-top: 45px;
+            }
+        }
+        .app-img-wrap {
+            left: 0;
+
+            .app-img{
+                padding-bottom: 85px;
+                max-width: 300px;
+                display: block;
+                margin: 0 auto;
+                top: 0;
+
+                .app-img-one, .app-img-two {
+                    width: 48%;
+                }
+                .app-img-one {
+                    top: 80px;
+                }
+            }
+            .app-bg-shape {
+                min-width: 290px;
+            }
+        }
+        .app-btn-wrap {
+            margin-top: 30px;
+
+            a {
+                width: 100%;
+
+                &:last-child {
+                    margin: {
+                        top: 15px;
+                        left: 0;
+                    };
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .app-box {
+        padding: {
+            left: 20px;
+            right: 20px;
+            bottom: 70px;
+        };
+        .app-text {
+            .app-shape-one {
+                margin-top: 45px;
+            }
+        }
+        .app-img-wrap {
+            left: 0;
+
+            .app-img {
+                padding-bottom: 85px;
+                max-width: 450px;
+                display: block;
+                margin: 0 auto;
+                top: 0;
+
+                .app-img-one {
+                    top: 80px;
+                }
+            }
+        }
+        .app-btn-wrap {
+            padding-left: 20px;
+            margin-top: 30px;
+
+            a {
+                &:last-child {
+                    margin: {
+                        top: 0;
+                        left: 15px;
+                    };
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .app-box {
+        padding: {
+            left: 20px;
+            right: 20px;
+        };
+        .app-img-wrap {
+            left: -85px;
+        }
+        .app-btn-wrap {
+            padding-left: 20px;
+        }
+    }
+
+}
+
+/* Min width 1400px */
+@media only screen and (min-width: 1400px) {
+
+    .app-box {
+        padding: {
+            left: 75px;
+            right: 82px;
+            bottom: 75px
+        };
+        .app-shape-one {
+            margin-top: 105px;
+            left: 68px;
+        }
+        .app-img-wrap {
+            left: -35px;
+
+            .app-img {
+                padding: 0 9px;    
+
+                .app-img-one {
+                    top: 144px;
+                }
+            }
+        }
+        .app-btn-wrap {
+            margin-bottom: 20px;
+        }
+    }
+
+}

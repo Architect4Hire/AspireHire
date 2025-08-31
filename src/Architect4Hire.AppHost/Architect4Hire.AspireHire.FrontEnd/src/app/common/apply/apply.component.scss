@@ -1,0 +1,122 @@
+.apply-box {
+    padding: 85px 45px 88px;
+
+    .section-title {
+        max-width: 60%;
+
+        h2 {
+            margin-bottom: 12px;
+            letter-spacing: 0;
+        }
+        p {
+            margin-bottom: 25px;
+        }
+    }
+    .apply-img {
+        position: absolute;
+        bottom: 0;
+    }
+    &.style-one {
+        background: {
+            color: transparent;
+            position: 65% 100%;
+            repeat: no-repeat;
+            size: cover;
+        };
+        .apply-img {
+            right: 29px;
+        }
+    }
+    &.style-two {
+        background: {
+            position: top right;
+            repeat: no-repeat;
+            size: cover;
+        };
+        .apply-img {
+            right: 0;
+        }
+        .btn {
+            &:before {
+                background-color: #1C2E3D;
+            }
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .apply-box {
+        padding: 50px 20px 0;
+
+        .section-title {
+            max-width: 100%;
+            margin-bottom: 25px;
+        }
+        &.style-one {
+            background-position: bottom center;
+
+            .apply-img {
+                max-width: 250px;
+                right: auto;
+            }
+        }
+        &.style-two {
+            .apply-img {
+                max-width: 270px;
+                right: auto;
+            }    
+        }
+        .apply-img {
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            bottom: auto;
+            right: auto;
+        } 
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .apply-box {
+        padding: 75px 30px 70px;  
+
+        &.style-one {
+            background-position: 100% 100%;
+
+            .apply-img {
+                max-width: 250px;
+            }    
+        }
+        &.style-two {
+            .apply-img {
+                max-width: 270px;
+            }    
+        }
+    }
+
+}
+
+/* Min width 1400px */
+@media only screen and (min-width: 1400px) {
+
+    .apply-box {
+        padding: 85px 74px 88px;
+
+        .section-title {
+            max-width: 60%;
+
+            h2 {
+                line-height: 56px;
+            }
+        }  
+        &.style-one {
+            background-position: 42% 100%;    
+        }
+    }
+
+}

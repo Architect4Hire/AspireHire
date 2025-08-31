@@ -1,0 +1,109 @@
+.login-form {
+    .form-group {
+        position: relative;
+
+        label {
+            display: block;
+            margin-bottom: 11px;
+        }
+        input {
+            height: 70px;
+            width: 100%;
+            color: var(--blackColor);
+            padding: 14px 20px 14px 25px;
+
+            &::placeholder{
+                color: #858F97;
+                opacity: 1;
+            }
+        }
+        &.style-two {
+            input {
+                color: var(--titleColor);
+
+                &::placeholder {
+                    color: var(--titleColor);
+                }
+            }
+            .pwd_open {
+                top: 60px;
+                right: 20px;
+                cursor: pointer;
+                color: var(--titleColor);
+            }
+        }
+    }
+}
+.login-form-wrap {
+    padding: 20px;
+
+    .login-btn {
+        padding: 16px 20px;
+        text-align: center;
+        margin-bottom: 15px;
+        border: 1px solid transparent;
+        background-color: var(--whiteColor);
+
+        img {
+            position: relative;
+            margin-right: 10px;
+            top: -1px;
+        }
+        &:hover {
+            border-color: var(--titleColor);
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .or-text {
+        position: relative;
+        text-align: center;
+
+        &:after {
+            left: 0;
+            top: 50%;
+            content: "";
+            width: 100%;
+            height: 1px;
+            z-index: -1;
+            position: absolute;
+            background-color: #E3E3E3;
+        }
+        span {
+            z-index: 1;
+            padding: 2px 22px;
+            position: relative;
+            display: inline-block;
+            background-color: #F1F4EB;
+        }
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .login-form {
+        .form-group {
+            input {
+                height: 56px;
+                padding: 12px 16px;
+            }
+            &.style-two {
+                .pwd_open {
+                    top: 50px;
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 1400px */
+@media only screen and (min-width: 1400px) {
+
+    .login-form-wrap {
+        padding: 40px;
+    }
+
+}

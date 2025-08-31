@@ -1,0 +1,45 @@
+.browse-candidate {
+    .browse-img-wrap {
+        .candidate-shape {
+            top: 44%;
+            left: 48.5%;
+            z-index: -1;
+            transform: translate(-50%,-50%);
+        }
+    }
+    .section-title {
+        h2 {
+            margin-bottom: 18px;
+        }
+    }
+}
+
+/* Max width 991px */
+@media only screen and (max-width: 991px) {
+
+    .browse-candidate {
+        .browse-img-wrap {
+            margin-bottom: 30px;
+            padding: 0 15px;
+        }
+    }
+
+}
+
+/* Min width 1400px */
+@media only screen and (min-width: 1400px) {
+
+    .browse-candidate {
+        .browse-img-wrap {
+            position: relative;
+            top: 4px;    
+        }
+        .section-title {
+            width: calc(100% - 48px);
+            position: relative;
+            margin-left: auto;
+            top: -5px;
+        }
+    }
+
+}
