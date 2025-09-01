@@ -11,4 +11,19 @@ namespace Architect4Hire.AspireHire.Shared.Enumerations
         ClientProfile,
         TalentProfile
     }
+
+    public enum Error
+    {
+        None,
+        NotFound,
+        InvalidInput,
+        Unauthorized,
+        Forbidden,
+        InternalServerError,
+        DuplicateEmail,
+        DuplicateUserName,
+        UserNotFound,
+        EmailNotConfirmed,
+        ProcessingError
+    }
 }

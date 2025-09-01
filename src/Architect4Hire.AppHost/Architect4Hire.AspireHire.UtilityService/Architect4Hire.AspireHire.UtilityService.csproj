@@ -15,7 +15,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Architect4Hire.AspireHire.ServiceDefaults\Architect4Hire.AspireHire.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\Architect4Hire.AspireHire.Shared\Architect4Hire.AspireHire.Shared.csproj" />
     <ProjectReference Include="..\Architect4Hire.AspireHire.UtilityServiceDomainLayer\Architect4Hire.AspireHire.UtilityServiceDomainLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>
