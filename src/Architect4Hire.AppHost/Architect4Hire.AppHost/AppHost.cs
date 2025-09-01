@@ -19,21 +19,21 @@ var cache = builder.AddRedis("cache").WithRedisInsight();
 
 #region services
 
-builder.AddProject<Projects.Architect4Hire_AspireHire_TokenService>("tokenservice");
-builder.AddProject<Projects.Architect4Hire_AspireHire_UserService>("userservice");
-builder.AddProject<Projects.Architect4Hire_AspireHire_ContractService>("contractservice");
-builder.AddProject<Projects.Architect4Hire_AspireHire_JobService>("jobservice");
-builder.AddProject<Projects.Architect4Hire_AspireHire_MessageService>("messageservice");
-builder.AddProject<Projects.Architect4Hire_AspireHire_PaymentService>("paymentservice");
-builder.AddProject<Projects.Architect4Hire_AspireHire_ProfileService>("profileservice");
-builder.AddProject<Projects.Architect4Hire_AspireHire_ProposalService>("proposalservice");
-builder.AddProject<Projects.Architect4Hire_AspireHire_UtilityService>("utilityservice");
+var token = builder.AddProject<Projects.Architect4Hire_AspireHire_TokenService>("tokenservice").WithReference(sql).WithReference(cache);
+var user = builder.AddProject<Projects.Architect4Hire_AspireHire_UserService>("userservice").WithReference(sql).WithReference(cache);
+var contract = builder.AddProject<Projects.Architect4Hire_AspireHire_ContractService>("contractservice").WithReference(cosmos).WithReference(cache);
+var job = builder.AddProject<Projects.Architect4Hire_AspireHire_JobService>("jobservice").WithReference(cosmos).WithReference(cache);
+var message = builder.AddProject<Projects.Architect4Hire_AspireHire_MessageService>("messageservice").WithReference(cosmos).WithReference(cache);
+var payment = builder.AddProject<Projects.Architect4Hire_AspireHire_PaymentService>("paymentservice").WithReference(cosmos).WithReference(cache);
+var profile = builder.AddProject<Projects.Architect4Hire_AspireHire_ProfileService>("profileservice").WithReference(cosmos).WithReference(cache);
+var proposal = builder.AddProject<Projects.Architect4Hire_AspireHire_ProposalService>("proposalservice").WithReference(cosmos).WithReference(cache);
+var utility = builder.AddProject<Projects.Architect4Hire_AspireHire_UtilityService>("utilityservice").WithReference(sql).WithReference(cache);
 
 #endregion services
 
 #region apps
 
-var frontEnd = builder.AddNpmApp("FrontEnd", "../Architect4Hire.AspireHire.FrontEnd", "start")
+var frontEnd = builder.AddNpmApp("frontend", "../Architect4Hire.AspireHire.FrontEnd", "start")
     .WithHttpEndpoint(env: "PORT")
     .PublishAsDockerFile();
 
